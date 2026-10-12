@@ -10,7 +10,7 @@ on:
       - 'clash-0001.yaml'
       - 'clash-*.yaml'
   schedule:   
-    - cron: '36 * * * *'   #国际标准时间，北京时间+8，即下午1点钟
+    - cron: '36 * * * *'   #每小时运行
   workflow_dispatch:
     inputs:
       config_file:
