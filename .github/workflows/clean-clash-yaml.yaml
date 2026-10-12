@@ -59,7 +59,7 @@ jobs:
           CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
           CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.clean.yaml"
           #mkdir -p sub
-          python clean_clash_config.py "$CONFIG_FILE" "$CLEAN_FILE"
+          python ./clean_clash_config.py "$CONFIG_FILE" "$CLEAN_FILE"
 
       - name: Show diff
         run: |
