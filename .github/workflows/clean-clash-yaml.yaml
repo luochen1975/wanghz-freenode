@@ -11,6 +11,7 @@ on:
       - 'clash-*.yaml'
   schedule:   
     - cron: '36 * * * *'   #每小时运行
+  repository_dispatch:    
   workflow_dispatch:
     inputs:
       config_file:
