@@ -9,7 +9,7 @@ name: download newest
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '0/90 * * * *'  # 每10分钟执行一次
+    - cron: '39 * * * *'  # 每10分钟执行一次
   repository_dispatch:
   workflow_dispatch:
 
@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     # 下载转换工具，jq
     - name: Download jq programs
@@ -79,6 +79,50 @@ jobs:
         
       shell: bash
       continue-on-error: true  # 即使出错也继续执行后续步骤
+
+    - name: Download clash config
+      run: |
+        CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
+        DOWNLOAD_URL="https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/protocol/hysteria2/${CONFIG_FILE}"
+        echo "Downloading from: $DOWNLOAD_URL"
+        curl -fL "$DOWNLOAD_URL" -o "$CONFIG_FILE"
+        if [ ! -s "$CONFIG_FILE" ]; then
+          echo "Failed to download or empty file: $CONFIG_FILE"
+          exit 1
+        fi
+        echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+    - name: Clean Clash config
+      id: clean
+      run: |
+        CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
+        CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.clean.yaml"
+        #mkdir -p sub
+        python ./clean_clash_config.py "$CONFIG_FILE" "$CLEAN_FILE"
+    - name: Show diff
+      run: |
+        CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
+        CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.clean.yaml"
+        if [ -f "$CLEAN_FILE" ]; then
+          echo "=== Diff ==="
+          diff -u "$CONFIG_FILE" "$CLEAN_FILE" || true
+        fi
+
+    - name: Upload cleaned config as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: cleaned-clash-config
+        path: "*.clean.yaml"
+        retention-days: 7
+      
         
     - name: 提交并推送更改
       run: |
