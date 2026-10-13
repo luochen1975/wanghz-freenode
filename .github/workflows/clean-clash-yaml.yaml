@@ -10,7 +10,7 @@ on:
       - 'clash-0001.yaml'
       - 'clash-*.yaml'
   schedule:   
-    - cron: '36 * * * *'   #每小时运行 
+    - cron: '36 */2 * * *'   #每小时运行 
   repository_dispatch:    
   workflow_dispatch:
     inputs:
@@ -71,37 +71,39 @@ jobs:
             diff -u "$CONFIG_FILE" "$CLEAN_FILE" || true
           fi
 
-      - name: Commit cleaned config
-        if: github.event_name != 'pull_request'
+      - name: Download clash config 2
         run: |
           CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
-          CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.clean.yaml"
-
-          if [ ! -f "$CLEAN_FILE" ]; then
-            echo "Error: Cleaned config file not generated"
+          DOWNLOAD_URL="https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/protocol/trojan/${CONFIG_FILE}"
+          echo "Downloading from: $DOWNLOAD_URL"
+          curl -fL "$DOWNLOAD_URL" -o "$CONFIG_FILE"
+          if [ ! -s "$CONFIG_FILE" ]; then
+            echo "Failed to download or empty file: $CONFIG_FILE"
             exit 1
           fi
+          echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
 
-          if cmp -s "$CONFIG_FILE" "$CLEAN_FILE"; then
-            echo "✓ No changes needed"
-            exit 0
-          fi
+      - name: Clean Clash config 2
+        id: clean
+        run: |
+          CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
+          CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.trojan.yaml"
+          #mkdir -p sub
+          python ./clean_clash_config.py "$CONFIG_FILE" "$CLEAN_FILE"
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add "$CLEAN_FILE"
-
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: clean control characters from $CONFIG_FILE -> $CLEAN_FILE"
-            git push
-          else
-            echo "No staged changes to commit"
-          fi
+      - name: 提交并推送更改
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          echo "1-检查时间：$(TZ=UTC-8 date +%Y-%m-%d" "%H:%M:%S)" > status
+          git add .
+          git commit -m "节点更新时间：$(TZ=UTC-8 date +%Y-%m-%d" "%H:%M:%S)"
+          git push
 
       - name: Upload cleaned config as artifact
         uses: actions/upload-artifact@v4
         with:
           name: cleaned-clash-config
-          path: "*.clean.yaml"
+          path: "sub/*.yaml"
           retention-days: 7
