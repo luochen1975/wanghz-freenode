@@ -84,7 +84,7 @@ jobs:
           echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
 
       - name: Clean Clash config 2
-        id: clean
+        id: clean2
         run: |
           CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
           CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.trojan.yaml"
