@@ -1,14 +1,8 @@
-# This is a basic workflow to help you get started with Actions
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-
 name: collect more
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # 每10分钟执行一次
+    - cron: '*/10 * * * *'
   repository_dispatch:
   workflow_dispatch:
 
@@ -17,73 +11,89 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Create sub dir
-      run: |
-        dir="sub"
-        if [ ! -d "$dir" ]; then
-            mkdir -p "$dir"
-        fi
-      shell: bash
+      - name: Prepare dir
+        run: |
+          mkdir -p sub
 
-    - name: Use curl to read remote webpage 
-      run: |
-        dir="sub"
-        i=1
+      - name: Download valid subscription data only
+        shell: bash
+        run: |
+          set -euo pipefail
 
-        # 已知 raw 文件：使用 raw.githubusercontent.com（更稳定）
-        curl -sSL "https://raw.githubusercontent.com/g-hunter-g/awesome-vpn/main/key.txt" -o ./sub/nodes_k.txt || true
+          mkdir -p sub
 
-        # 从 README 中提取 https://pub 开头的链接，避免捕获尾部标点
-        README_URL="https://raw.githubusercontent.com/hysteria350/free-jichang/main/README.md"
-        for url in $(curl -sSL "$README_URL" | grep -oE 'https?://pub[^[:space:)\"'\''>,]+' || true); do
-          # 清理尾部可能的标点
-          url=$(echo "$url" | sed 's/[)\",'\'';:,]$//')
-          echo "处理 URL: $url"
-          # 跟随重定向、设置 User-Agent、Accept 并允许压缩
-          curl -sSL --compressed \
-            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
-            -H "Accept: text/plain" \
-            "$url" -o "./sub/nodes_$i.txt" || echo "下载 $url 失败或返回非200"
-          i=$((i + 1))
-        done
+          # 只接受真正的订阅 payload，不接受 HTML
+          save_if_valid() {
+            local out="$1"
+            local url="$2"
+            local tmp_headers
+            local tmp_body
+            tmp_headers=$(mktemp)
+            tmp_body=$(mktemp)
 
-        # 处理 https://sub... 链接（改进正则并跟随重定向）
-        README2_URL="https://raw.githubusercontent.com/gslege/CloudflareIP/main/README.md"
-        for url in $(curl -sSL "$README2_URL" | grep -oE 'https?://sub[a-z][^[:space:)\"'\''>,]+' || true); do
-          url=$(echo "$url" | sed 's/[)\",'\'';:,]$//')
-          echo "处理 URL: $url"
-          curl -sSL --compressed \
-            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
-            -H "Accept: text/plain" \
-            -H "Cookie: cf_clearance=你的cf_clearance值; other_cookie=其他值" \
-            "$url" -o "./sub/nodes_$i.txt" || echo "下载 $url 失败或返回非200"
-          i=$((i + 1))
-        done
+            echo "Checking URL: $url"
 
-      shell: bash
-      continue-on-error: true
+            if curl -fsSL \
+              --connect-timeout 20 \
+              --max-time 40 \
+              -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
+              -H "Accept: text/plain, application/octet-stream, */*" \
+              -D "$tmp_headers" \
+              -o "$tmp_body" \
+              "$url" >/dev/null 2>&1; then
 
-    - name: Use curl to read some more
-      run: |
-        # 直接拉取已知 raw 文件
-        curl -sSL "https://raw.githubusercontent.com/maimengmeng/mysub/main/valid_content.txt" -o ./sub/nodes_mmm.txt || true
-        curl -sSL "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2" -o ./sub/nodes_v2_base64 || true
-        curl -sSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/permanent/mihomo.yaml" -o ./sub/mihomo.yaml || true
-        curl -sSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/latest/94154066.yaml" -o ./sub/latest.yaml || true
-      shell: bash
-      continue-on-error: true
+              local ctype
+              ctype=$(grep -i '^Content-Type:' "$tmp_headers" | tail -n 1 | cut -d' ' -f2- | tr -d '\r' || true)
 
-    - name: 提交并推送更改
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        TIMESTAMP=$(TZ=UTC-8 date '+%Y-%m-%d %H:%M:%S')
-        echo "1-检查时间：$TIMESTAMP" > status
-        git add .
-        # 如果没有变更，git commit 会失败；捕获并继续
-        git commit -m "节点更新时间：$TIMESTAMP" || echo "no changes to commit"
-        git push || echo "git push 失败"
-      shell: bash
+              local first
+              first=$(head -c 512 "$tmp_body" | tr -d '\r' || true)
+
+              # 允许的内容：纯文本订阅 / base64 / 协议头
+              if [[ "$ctype" == *"text/plain"* ]] || [[ "$ctype" == *"application/octet-stream"* ]] || \
+                 [[ "$first" =~ ^(vmess|vless|ss|trojan|hysteria|hy2|https?):// ]] || \
+                 [[ "$first" =~ ^[A-Za-z0-9+/=_-]+$ ]]; then
+                cp "$tmp_body" "$out"
+                echo "Saved valid payload to $out"
+              else
+                echo "Skip HTML/challenge page: $url (Content-Type: ${ctype:-unknown})"
+              fi
+            else
+              echo "Fetch failed: $url"
+            fi
+
+            rm -f "$tmp_headers" "$tmp_body"
+          }
+
+          # 1) 直接从 raw github 拉取已知文本订阅源
+          curl -fsSL "https://raw.githubusercontent.com/g-hunter-g/awesome-vpn/main/key.txt" -o ./sub/nodes_k.txt || true
+
+          # 2) 从 README 抓取 URL，但必须校验是不是实际订阅内容
+          README1="https://raw.githubusercontent.com/hysteria350/free-jichang/main/README.md"
+          for url in $(curl -fsSL "$README1" 2>/dev/null | grep -oE 'https?://[^[:space:]"'"'"'<>]+' | sed 's/[),;]$//' | grep -E 'https?://(pub|sub)' || true); do
+            save_if_valid "./sub/nodes_$(date +%s)_1.txt" "$url"
+          done
+
+          README2="https://raw.githubusercontent.com/gslege/CloudflareIP/main/README.md"
+          for url in $(curl -fsSL "$README2" 2>/dev/null | grep -oE 'https?://[^[:space:]"'"'"'<>]+' | sed 's/[),;]$//' | grep -E 'https?://(sub|pub)' || true); do
+            save_if_valid "./sub/nodes_$(date +%s)_2.txt" "$url"
+          done
+
+          # 3) 直接拉已知 raw 文件（最稳）
+          curl -fsSL "https://raw.githubusercontent.com/maimengmeng/mysub/main/valid_content.txt" -o ./sub/nodes_mmm.txt || true
+          curl -fsSL "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2" -o ./sub/nodes_v2_base64 || true
+          curl -fsSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/permanent/mihomo.yaml" -o ./sub/mihomo.yaml || true
+          curl -fsSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/latest/94154066.yaml" -o ./sub/latest.yaml || true
+
+      - name: Commit and push
+        shell: bash
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          TIMESTAMP=$(TZ=UTC-8 date '+%Y-%m-%d %H:%M:%S')
+          echo "1-检查时间：$TIMESTAMP" > status
+          git add .
+          git commit -m "节点更新时间：$TIMESTAMP" || echo "No changes"
+          git push || echo "push failed"
