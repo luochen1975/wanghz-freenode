@@ -6,68 +6,84 @@
 
 name: collect more
 
-# Controls when the workflow will run
 on:
   schedule:
-    - cron: '0/90 * * * *'  # 每10分钟执行一次
+    - cron: '*/10 * * * *'  # 每10分钟执行一次
   repository_dispatch:
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Use curl to read remote webpage 
+    - name: Create sub dir
       run: |
-        dir="sub" 
+        dir="sub"
         if [ ! -d "$dir" ]; then
             mkdir -p "$dir"
         fi
-        
+      shell: bash
+
+    - name: Use curl to read remote webpage 
+      run: |
+        dir="sub"
         i=1
-        curl -s "https://raw.githubusercontent.com/g-hunter-g/awesome-vpn/refs/heads/main/key.txt" -o ./sub/nodes_k.txt
-        
-        for url in $(curl -s "https://raw.githubusercontent.com/hysteria350/free-jichang/main/README.md" | grep -oP 'https://pub\S+'); do
-          # 在这里处理每个 $url，
+
+        # 已知 raw 文件：使用 raw.githubusercontent.com（更稳定）
+        curl -sSL "https://raw.githubusercontent.com/g-hunter-g/awesome-vpn/main/key.txt" -o ./sub/nodes_k.txt || true
+
+        # 从 README 中提取 https://pub 开头的链接，避免捕获尾部标点
+        README_URL="https://raw.githubusercontent.com/hysteria350/free-jichang/main/README.md"
+        for url in $(curl -sSL "$README_URL" | grep -oE 'https?://pub[^[:space:)\"'\''>,]+' || true); do
+          # 清理尾部可能的标点
+          url=$(echo "$url" | sed 's/[)\",'\'';:,]$//')
           echo "处理 URL: $url"
-          curl -s "$url" > "./sub/nodes_$i"  # 示例：下载内容到文件
+          # 跟随重定向、设置 User-Agent、Accept 并允许压缩
+          curl -sSL --compressed \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
+            -H "Accept: text/plain" \
+            "$url" -o "./sub/nodes_$i.txt" || echo "下载 $url 失败或返回非200"
           i=$((i + 1))
         done
-        for url in $(curl -s "https://raw.githubusercontent.com/gslege/CloudflareIP/main/README.md" | grep -oP 'https://sub[a-z]\S+'); do
-          # 在这里处理每个 $url，
+
+        # 处理 https://sub... 链接（改进正则并跟随重定向）
+        README2_URL="https://raw.githubusercontent.com/gslege/CloudflareIP/main/README.md"
+        for url in $(curl -sSL "$README2_URL" | grep -oE 'https?://sub[a-z][^[:space:)\"'\''>,]+' || true); do
+          url=$(echo "$url" | sed 's/[)\",'\'';:,]$//')
           echo "处理 URL: $url"
-          curl -s \
+          curl -sSL --compressed \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
             -H "Accept: text/plain" \
             -H "Cookie: cf_clearance=你的cf_clearance值; other_cookie=其他值" \
-            "$url" \
-            -o "./sub/nodes_$i"
+            "$url" -o "./sub/nodes_$i.txt" || echo "下载 $url 失败或返回非200"
           i=$((i + 1))
         done
-        
+
       shell: bash
-      continue-on-error: true  # 即使出错也继续执行后续步骤
-        
+      continue-on-error: true
+
     - name: Use curl to read some more
       run: |
-        curl -s "https://raw.githubusercontent.com/maimengmeng/mysub/refs/heads/main/valid_content.txt" -o ./sub/nodes_mmm.txt
-        curl -s "https://raw.githubusercontent.com/free-nodes/v2rayfree/refs/heads/main/v2" -o ./sub/nodes_v2_base64
-        curl -s "https://raw.githubusercontent.com/ovmvo/SubShare/refs/heads/main/sub/permanent/mihomo.yaml" -o ./sub//mihomo.yaml
-        curl -s "https://raw.githubusercontent.com/ovmvo/SubShare/refs/heads/main/sub/latest/94154066.yaml" -o ./sub/latest.yaml
-        
+        # 直接拉取已知 raw 文件
+        curl -sSL "https://raw.githubusercontent.com/maimengmeng/mysub/main/valid_content.txt" -o ./sub/nodes_mmm.txt || true
+        curl -sSL "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2" -o ./sub/nodes_v2_base64 || true
+        curl -sSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/permanent/mihomo.yaml" -o ./sub/mihomo.yaml || true
+        curl -sSL "https://raw.githubusercontent.com/ovmvo/SubShare/main/sub/latest/94154066.yaml" -o ./sub/latest.yaml || true
       shell: bash
-      continue-on-error: true  # 即使出错也继续执行后续步骤
-        
+      continue-on-error: true
+
     - name: 提交并推送更改
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        echo "1-检查时间：$(TZ=UTC-8 date +%Y-%m-%d" "%H:%M:%S)" > status
+        TIMESTAMP=$(TZ=UTC-8 date '+%Y-%m-%d %H:%M:%S')
+        echo "1-检查时间：$TIMESTAMP" > status
         git add .
-        git commit -m "节点更新时间：$(TZ=UTC-8 date +%Y-%m-%d" "%H:%M:%S)"
-        git push
+        # 如果没有变更，git commit 会失败；捕获并继续
+        git commit -m "节点更新时间：$TIMESTAMP" || echo "no changes to commit"
+        git push || echo "git push 失败"
+      shell: bash
