@@ -1,760 +1,5193 @@
 proxies:
-    - name: hysteria2-1827145002
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    - name: trojan-1827147003
+      password: 5504eaa8-1395-402f-8e0e-75ecd762e627
       port: 443
-      server: vpn-de-002.fastervpn.world
+      server: 104.18.66.57
+      skip-cert-verify: false
+      sni: nat3.xxai.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827147122
+      password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+      port: 443
+      server: us3-2.998998.best
       skip-cert-verify: true
-      sni: 127.0.0.1
-      type: hysteria2
-    - name: hysteria2-1827145009
-      password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
+      sni: nat3.xxai.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827147236
+      password: 5ffee9b2-4514-4719-97b3-67810ece038d
+      port: 443
+      server: ali-panel-1.terhav.workers.dev
+      skip-cert-verify: false
+      sni: ali-panel-1.terhav.workers.dev
+      type: trojan
+      udp: true
+    - name: trojan-1827147300
+      password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+      port: 443
+      server: uk8.998998.best
+      skip-cert-verify: false
+      sni: server41.9966338.xyz
+      type: trojan
+      udp: true
+    - name: trojan-1827147576
+      password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+      port: 443
+      server: us3-2.998998.best
+      skip-cert-verify: false
+      sni: nat3.xxai.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827147641
+      password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+      port: 443
+      server: 104.18.65.57
+      skip-cert-verify: false
+      sni: nat3.xxai.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827147881
+      password: 5931134d1cde66bf83a54acdfebe7ab2
+      port: 443
+      server: 47.250.84.25
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827147893
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147901
+      password: UX82473651
+      port: 443
+      server: brave-tomcat.rooster465.autos
+      skip-cert-verify: false
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147907
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147915
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147920
+      password: UX82473651
+      port: 443
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: true
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147925
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: chatgpt.com
+      skip-cert-verify: false
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827147928
+      password: UX82473651
+      port: 443
+      server: 3.34.131.153
+      skip-cert-verify: false
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147936
+      password: UX82473651
+      port: 443
+      server: moral-basilisk.rooster465.autos
+      skip-cert-verify: false
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147939
+      password: Telegram_healer_config
+      port: 443
+      server: uh-e03ojzgq4ev7yy7b.6v46fk4wd2y8l5p2xtd.workers.dev
+      skip-cert-verify: false
+      sni: uh-e03ojzgq4ev7yy7b.6v46fk4wd2y8l5p2xtd.workers.dev
+      type: trojan
+      udp: true
+    - name: trojan-1827147942
+      password: UX82473651
+      port: 443
+      server: central-jawfish.rooster465.autos
+      skip-cert-verify: false
+      sni: central-jawfish.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147947
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: mfyousheng.nl.eu.org
       skip-cert-verify: false
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145019
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
+      type: trojan
+      udp: true
+    - name: trojan-1827147951
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
       skip-cert-verify: false
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145041
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
+      sni: inviting-ferret.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147955
+      password: UX82473651
+      port: 443
+      server: 56.10.9.77
+      skip-cert-verify: false
+      sni: inviting-ferret.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147964
+      password: Trojan@82164024
+      port: 443
+      server: pl.tronsg.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827147965
+      password: UX82473651
+      port: 443
+      server: 3.1.252.137
+      skip-cert-verify: false
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147969
+      password: UX82473651
+      port: 443
+      server: musical-mouse.rooster465.autos
+      skip-cert-verify: true
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147982
+      password: UX82473651
+      port: 443
+      server: 43.201.100.203
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147986
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: true
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827147998
+      password: UX82473651
+      port: 443
+      server: 18.141.136.8
+      skip-cert-verify: false
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148025
+      password: UX82473651
+      port: 443
+      server: 3.35.207.188
+      skip-cert-verify: false
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148029
+      password: UX82473651
+      port: 443
+      server: brave-tomcat.rooster465.autos
+      skip-cert-verify: false
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148039
+      password: 8bdfa4e8dac99c57decdd8bf55d2da4c
+      port: 10443
+      server: 107.149.159.190
+      skip-cert-verify: false
+      sni: cf.shiranyu.xyz
+      type: trojan
+      udp: true
+    - name: trojan-1827148049
+      password: Trojan@82164024
+      port: 443
+      server: in.tronsg.com
+      skip-cert-verify: true
+      sni: in.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148054
+      password: UX82473651
+      port: 443
+      server: glorious-glider.rooster465.autos
+      skip-cert-verify: false
+      sni: glorious-glider.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148057
+      password: Trojan@82164024
+      port: 443
+      server: ca.tronsg.com
+      skip-cert-verify: false
+      sni: ca.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148117
+      password: M7v%w11Se*
+      port: 443
+      server: tttyder.wsone.icu
+      skip-cert-verify: false
+      sni: tttyder.wsone.icu
+      type: trojan
+      udp: true
+    - name: trojan-1827148119
+      password: UX82473651
+      port: 443
+      server: 3.35.168.225
+      skip-cert-verify: true
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148128
+      password: UX82473651
+      port: 443
+      server: central-jawfish.rooster465.autos
+      skip-cert-verify: true
+      sni: central-jawfish.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148132
+      password: UX82473651
+      port: 443
+      server: moral-basilisk.rooster465.autos
+      skip-cert-verify: true
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148150
+      password: UX82473651
+      port: 443
+      server: main-fawn.rooster465.autos
+      skip-cert-verify: true
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148156
+      password: UX82473651
+      port: 443
+      server: musical-mouse.rooster465.autos
+      skip-cert-verify: false
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148174
+      password: UX82473651
+      port: 443
+      server: central-jawfish.rooster465.autos
+      skip-cert-verify: true
+      sni: central-jawfish.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148178
+      password: UX82473651
+      port: 443
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: false
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148186
+      password: UX82473651
+      port: 443
+      server: glorious-glider.rooster465.autos
+      skip-cert-verify: true
+      sni: glorious-glider.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148192
+      password: UX82473651
+      port: 443
+      server: 3.34.192.47
+      skip-cert-verify: false
+      sni: central-jawfish.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148194
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
       skip-cert-verify: false
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145045
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
+      type: trojan
+      udp: true
+    - name: trojan-1827148220
+      password: UX82473651
+      port: 443
+      server: brave-tomcat.rooster465.autos
+      skip-cert-verify: true
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148231
+      password: UX82473651
+      port: 443
+      server: 54.151.181.75
       skip-cert-verify: false
-      sni: spainspeedboostjbl88.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145058
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: true
-      sni: 127.0.0.1
-      type: hysteria2
-    - name: hysteria2-1827145061
-      password: gf1:gfhysteria2024
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148233
+      password: UX82473651
       port: 443
-      server: 185.156.44.99
-      skip-cert-verify: true
-      sni: css.rbxcdn.com
-      type: hysteria2
-    - name: hysteria2-1827145109
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: false
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148252
+      password: UX82473651
       port: 443
-      server: 51.44.167.227
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: false
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148260
+      password: UX82473651
+      port: 443
+      server: 47.131.250.125
+      skip-cert-verify: false
+      sni: simple-molly.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148261
+      password: Trojan@82164024
+      port: 443
+      server: ca.tronsg.com
       skip-cert-verify: true
-      sni: vpn-fr-001.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145136
-      password: u63SxILNwtrQZ7Y1ZrFaZfsA
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827148270
+      password: UX82473651
+      port: 443
+      server: moral-basilisk.rooster465.autos
+      skip-cert-verify: true
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148275
+      password: UX82473651
+      port: 443
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: false
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148287
+      password: M7v%w11Se*
+      port: 443
+      server: 34.94.125.227
+      skip-cert-verify: false
+      sni: mxlo.wsone.icu
+      type: trojan
+      udp: true
+    - name: trojan-1827148301
+      password: UX82473651
+      port: 443
+      server: moral-basilisk.rooster465.autos
+      skip-cert-verify: false
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148322
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148325
+      password: UX82473651
+      port: 443
+      server: main-fawn.rooster465.autos
+      skip-cert-verify: false
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148330
+      password: UX82473651
+      port: 443
+      server: main-fawn.rooster465.autos
+      skip-cert-verify: false
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148342
+      password: UX82473651
+      port: 443
+      server: brave-tomcat.rooster465.autos
+      skip-cert-verify: true
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148345
+      password: UX82473651
+      port: 443
+      server: musical-mouse.rooster465.autos
+      skip-cert-verify: false
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148348
+      password: UX82473651
+      port: 443
+      server: central-jawfish.rooster465.autos
+      skip-cert-verify: false
+      sni: central-jawfish.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148349
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: true
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148362
+      password: Trojan@82164024
+      port: 443
+      server: 92.118.150.146
+      skip-cert-verify: false
+      sni: pl.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148379
+      password: M7v%w11Se*
+      port: 443
+      server: tttyder.wsone.icu
+      skip-cert-verify: true
+      sni: tttyder.wsone.icu
+      type: trojan
+      udp: true
+    - name: trojan-1827148395
+      password: UX82473651
+      port: 443
+      server: glorious-glider.rooster465.autos
+      skip-cert-verify: true
+      sni: glorious-glider.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148399
+      password: UX82473651
+      port: 443
+      server: glorious-glider.rooster465.autos
+      skip-cert-verify: false
+      sni: glorious-glider.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148419
+      password: UX82473651
+      port: 443
+      server: 3.36.50.213
+      skip-cert-verify: false
+      sni: pure-kodiak.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148420
+      password: Trojan@82164024
+      port: 443
+      server: in.tronsg.com
+      skip-cert-verify: true
+      sni: in.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148424
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: mfyousheng.nl.eu.org
+      skip-cert-verify: false
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148426
+      password: UX82473651
+      port: 443
+      server: optimum-snapper.rooster465.autos
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148454
+      password: UX82473651
+      port: 443
+      server: main-fawn.rooster465.autos
+      skip-cert-verify: false
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148462
+      password: Trojan@82164024
+      port: 443
+      server: pl.tronsg.com
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827148465
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: 188.114.96.3
+      skip-cert-verify: true
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148518
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
+      skip-cert-verify: false
+      sni: inviting-ferret.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148526
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
+      skip-cert-verify: false
+      sni: inviting-ferret.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148532
+      password: Trojan@82164024
+      port: 443
+      server: 108.61.186.37
+      skip-cert-verify: true
+      sni: jp.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148571
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: 107.189.26.160
+      skip-cert-verify: false
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148577
+      password: Trojan@82164024
+      port: 443
+      server: ca.tronsg.com
+      skip-cert-verify: false
+      sni: ca.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148610
+      password: Trojan@82164024
+      port: 443
+      server: ca.tronsg.com
+      skip-cert-verify: true
+      sni: ca.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148613
+      password: UX82473651
+      port: 443
+      server: musical-mouse.rooster465.autos
+      skip-cert-verify: true
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148633
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
+      skip-cert-verify: true
+      sni: inviting-ferret.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148694
+      password: UX82473651
+      port: 443
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: true
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148723
+      password: UX82473651
+      port: 443
+      server: noted-cougar.rooster465.autos
+      skip-cert-verify: false
+      sni: noted-cougar.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148740
+      password: UX82473651
+      port: 443
+      server: inviting-ferret.rooster465.autos
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827148743
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: 172.67.211.79
+      skip-cert-verify: false
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148746
+      password: ae7eb4dwyaz25pxwgq59
+      port: 59689
+      server: 66.23.203.21
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827148749
+      password: humanity
+      port: 443
+      server: 155.103.71.142
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148780
+      password: humanity
+      port: 443
+      server: 193.23.202.65
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148785
+      password: humanity
+      port: 443
+      server: 94.158.219.126
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148804
+      password: UX82473651
+      port: 443
+      server: pretty-rat.rooster465.autos
+      skip-cert-verify: false
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148805
+      password: UX82473651
+      port: 443
+      server: pure-kodiak.rooster465.autos
+      skip-cert-verify: true
+      sni: pure-kodiak.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827148809
+      password: humanity
+      port: 443
+      server: www.speedtest.net
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148810
+      password: e309e031-991e-4656-9934-44d10deb8fd8
+      port: 2053
+      server: www.speedtest.org
+      skip-cert-verify: false
+      sni: nimm.mpd.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827148813
+      password: humanity
+      port: 2053
+      server: 185.114.72.31
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148818
+      password: humanity
+      port: 443
+      server: chat.openai.com
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148822
+      password: e309e031-991e-4656-9934-44d10deb8fd8
+      port: 2053
+      server: 172.67.176.3
+      skip-cert-verify: false
+      sni: nimm.mpd.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827148827
+      password: humanity
+      port: 443
+      server: 162.159.244.91
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148830
+      password: humanity
+      port: 443
+      server: 104.21.13.204
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148841
+      password: humanity
+      port: 443
+      server: 104.18.9.83
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148845
+      password: humanity
+      port: 443
+      server: 185.255.179.166
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148848
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148852
+      password: bpb-trojan
+      port: 443
+      server: vless.herogoing.top
+      skip-cert-verify: false
+      sni: vless.herogoing.top
+      type: trojan
+      udp: true
+    - name: trojan-1827148859
+      password: humanity
+      port: 443
+      server: 104.21.103.254
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148864
+      password: humanity
+      port: 443
+      server: 46.62.230.149
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148866
+      password: humanity
+      port: 443
+      server: 104.18.37.127
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148893
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827148938
+      password: humanity
+      port: 443
+      server: 131.196.254.151
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148954
+      password: humanity
+      port: 443
+      server: 104.16.7.70
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148972
+      password: humanity
+      port: 443
+      server: 162.159.253.41
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827148973
+      password: humanity
+      port: 443
+      server: 192.145.30.27
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827148991
+      password: UX82473651
+      port: 443
+      server: simple-molly.rooster465.autos
+      skip-cert-verify: false
+      sni: simple-molly.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149009
+      password: humanity
+      port: 2053
+      server: 91.245.225.79
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149025
+      password: humanity
+      port: 443
+      server: 108.162.194.134
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149027
+      password: humanity
+      port: 443
+      server: www.hcaptcha.com
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149050
+      password: humanity
+      port: 443
+      server: 172.67.118.45
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149065
+      password: humanity
       port: 8443
-      server: 8.211.175.236
-      skip-cert-verify: true
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145140
-      password: 9cfc9458e48c028ec03ff86ebc71c744
-      port: 50160
-      server: 150-230-252-217.liao.kdns.fr
-      skip-cert-verify: true
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145144
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
+      server: 5.78.92.27
       skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145146
-      password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149073
+      password: humanity
       port: 443
-      server: de.1.23.h2corp.org
-      skip-cert-verify: true
-      sni: germany3.h2corp.local
-      type: hysteria2
-    - name: hysteria2-1827145159
-      password: usqmqUKJFIlCmvkCNSY64L3k
+      server: 141.193.213.172
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149085
+      password: humanity
       port: 443
-      server: 8.209.247.109
+      server: 8.47.69.0
       skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-    - name: hysteria2-1827145162
-      password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-      port: 18642
-      server: s3.huhiuh.space
-      skip-cert-verify: true
-      sni: s3.huhiuh.space
-      type: hysteria2
-    - name: hysteria2-1827145166
-      password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: false
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145172
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 20270
-      server: qcloudge1.exitvpn.shop
-      skip-cert-verify: false
-      sni: qcloudge1.exitvpn.shop
-      type: hysteria2
-    - name: hysteria2-1827145205
-      password: https://xship.best
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149094
+      password: humanity
       port: 443
-      server: starlink-ft.251313.xyz
+      server: 104.27.21.22
       skip-cert-verify: true
-      sni: xship.top
-      type: hysteria2
-    - name: hysteria2-1827145223
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 20270
-      server: qcloudge1.exitvpn.shop
-      skip-cert-verify: false
-      sni: qcloudge1.exitvpn.shop
-      type: hysteria2
-    - name: hysteria2-1827145241
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: sweedenqfds777.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145246
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149095
+      password: humanity
       port: 443
-      server: 13.36.234.11
-      skip-cert-verify: true
-      sni: vpn-fr-001.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145249
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 20270
-      server: qcloudge1.exitvpn.shop
+      server: 85.31.102.163
       skip-cert-verify: false
-      sni: qcloudge1.exitvpn.shop
-      type: hysteria2
-    - name: hysteria2-1827145259
-      password: dongtaiwang.com
-      port: 44356
-      server: 142.249.37.90
-      skip-cert-verify: false
-      sni: hy2.561891.xyz
-      type: hysteria2
-    - name: hysteria2-1827145273
-      password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-      port: 18333
-      server: es2.xiaoliyu.cyou
-      skip-cert-verify: true
-      sni: es2.xiaoliyu.cyou
-      type: hysteria2
-    - name: hysteria2-1827145278
-      password: dongtaiwang.com
-      port: 44356
-      server: hy2.561891.xyz
-      skip-cert-verify: false
-      sni: hy2.561891.xyz
-      type: hysteria2
-    - name: hysteria2-1827145281
-      password: 529f1911-04d5-4427-94b9-c851fd459a27
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149098
+      password: humanity
       port: 443
-      server: 109.235.49.234
+      server: 104.18.8.83
       skip-cert-verify: false
-      sni: tcp-reset-club.net
-      type: hysteria2
-    - name: hysteria2-1827145282
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: spainspeedboostjbl88.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145293
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: sweedenqfds777.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145305
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145311
-      password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149104
+      password: humanity
       port: 443
-      server: fi1server.rabstvo.shop
-      skip-cert-verify: false
-      sni: fi1server.rabstvo.shop
-      type: hysteria2
-    - name: hysteria2-1827145323
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 20270
-      server: qcloudge1.exitvpn.shop
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145354
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145356
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: false
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145371
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145380
-      password: dd50a499-7e43-4589-8490-f3b9c2451473
+      server: 172.64.72.171
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149109
+      password: humanity
       port: 443
-      server: nl-hy-test.tcp-reset-club.net
-      skip-cert-verify: false
-      sni: tcp-reset-club.net
-      type: hysteria2
-    - name: hysteria2-1827145400
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: false
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145413
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: false
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145430
-      password: github.com/Alvin9999-newpac/fanqiang
-      port: 43115
-      server: 62.210.147.2
+      server: 185.18.250.252
       skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-    - name: hysteria2-1827145434
-      password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-      port: 18642
-      server: s3.huhiuh.space
-      skip-cert-verify: true
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145474
-      password: dongtaiwang.com
-      port: 22000
-      server: 62.210.124.146
-      skip-cert-verify: true
-      sni: www.microsoft.com
-      type: hysteria2
-    - name: hysteria2-1827145501
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-      port: 443
-      server: 160.187.100.109
-      skip-cert-verify: true
-      sni: vpn-tw-002.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145511
-      password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149125
+      password: humanity
       port: 2053
-      server: 194.87.118.184
+      server: 82.117.245.125
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149139
+      password: trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX
+      port: 9443
+      server: 38.181.42.136
+      skip-cert-verify: false
+      sni: www.jqyverse.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149167
+      password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+      port: 8886
+      server: 139.180.146.200
       skip-cert-verify: true
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145519
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 20270
-      server: qcloudge1.exitvpn.shop
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145540
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145550
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: spainspeedboostjbl88.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145587
-      password: 9cfc9458e48c028ec03ff86ebc71c744
-      port: 50160
-      server: 150-230-252-217.liao.kdns.fr
-      skip-cert-verify: false
-      sni: 150-230-252-217.liao.kdns.fr
-      type: hysteria2
-    - name: hysteria2-1827145588
-      password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+      type: trojan
+      udp: true
+    - name: trojan-1827149191
+      password: mitivpn
       port: 443
-      server: 91.196.32.163
+      server: 151.101.38.6
       skip-cert-verify: true
-      sni: germany3.h2corp.local
-      type: hysteria2
-    - name: hysteria2-1827145601
-      password: f87376e17da040ed04c9665ce8972930
-      port: 50160
-      server: 138.2.73.238
-      skip-cert-verify: true
-      sni: 138.2.73.238
-      type: hysteria2
-    - name: hysteria2-1827145610
-      password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: spainspeedboostjbl88.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145617
-      password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145632
-      password: bce6c821-200d-421f-bf3d-7159e5246ea0
-      port: 33333
-      server: 155.248.209.237
-      skip-cert-verify: true
-      sni: 155.248.209.237
-      type: hysteria2
-    - name: hysteria2-1827145638
-      password: 4291c983-c520-46ac-82cc-48f14bef573f
-      port: 35013
-      server: 129.213.91.185
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - name: hysteria2-1827145643
-      password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-      port: 18642
-      server: s3.huhiuh.space
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria2
-    - name: hysteria2-1827145649
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
-      skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145654
-      password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-      port: 4433
-      server: de1.xiaoliyu.cyou
-      skip-cert-verify: true
-      sni: 127.0.0.1
-      type: hysteria2
-    - name: hysteria2-1827145660
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: sweedenqfds777.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145665
-      password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+      sni: www.firefox.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149202
+      password: UX82473651
       port: 443
-      server: 64.188.98.171
+      server: pretty-rat.rooster465.autos
       skip-cert-verify: true
-      sni: germany3.h2corp.local
-      type: hysteria2
-    - name: hysteria2-1827145683
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 20270
-      server: qcloudge1.exitvpn.shop
-      skip-cert-verify: false
-      sni: qcloudge1.exitvpn.shop
-      type: hysteria2
-    - name: hysteria2-1827145686
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: sweedenqfds777.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145692
-      password: bce6c821-200d-421f-bf3d-7159e5246ea0
-      port: 33333
-      server: hy2.123266.xyz
-      skip-cert-verify: false
-      sni: hy2.123266.xyz
-      type: hysteria2
-    - name: hysteria2-1827145698
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149233
+      password: humanity
       port: 443
-      server: vpn-de-002.fastervpn.world
+      server: 45.87.41.18
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149277
+      password: humanity
+      port: 443
+      server: 104.19.229.21
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149283
+      password: humanity
+      port: 443
+      server: 203.202.232.211
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149293
+      password: humanity
+      port: 443
+      server: 104.16.72.50
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149305
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
       skip-cert-verify: true
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145711
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 27313
-      server: spainspeedboostjbl88.qcloud.surf
+      type: trojan
+      udp: true
+    - name: trojan-1827149323
+      password: humanity
+      port: 443
+      server: 46.8.228.165
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149338
+      password: UX82473651
+      port: 443
+      server: pure-kodiak.rooster465.autos
+      skip-cert-verify: true
+      sni: pure-kodiak.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149346
+      password: UX82473651
+      port: 443
+      server: pure-kodiak.rooster465.autos
+      skip-cert-verify: false
+      sni: pure-kodiak.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149348
+      password: humanity
+      port: 443
+      server: 212.183.88.136
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149351
+      password: humanity
+      port: 8443
+      server: 212.227.144.37
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149364
+      password: humanity
+      port: 443
+      server: 188.226.181.61
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149365
+      password: UX82473651
+      port: 443
+      server: pretty-rat.rooster465.autos
+      skip-cert-verify: true
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149379
+      password: e309e031-991e-4656-9934-44d10deb8fd8
+      port: 2053
+      server: nimm.mpd.cc.cd
+      skip-cert-verify: false
+      sni: nimm.mpd.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827149383
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149401
+      password: humanity
+      port: 443
+      server: 104.21.33.59
+      skip-cert-verify: true
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149417
+      password: humanity
+      port: 443
+      server: 162.159.91.211
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149419
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149430
+      password: humanity
+      port: 443
+      server: 104.17.121.43
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149432
+      password: humanity
+      port: 443
+      server: 5.44.46.142
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149438
+      password: UX82473651
+      port: 443
+      server: pretty-rat.rooster465.autos
+      skip-cert-verify: false
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149439
+      password: humanity
+      port: 2053
+      server: 89.150.34.41
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149445
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
       skip-cert-verify: false
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145719
-      password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
-      skip-cert-verify: false
-      sni: sweedenqfds777.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145748
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      type: trojan
+      udp: true
+    - name: trojan-1827149456
+      password: humanity
       port: 443
-      server: vpn-de-002.fastervpn.world
+      server: 46.62.164.121
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149490
+      password: UX82473651
+      port: 443
+      server: pure-kodiak.rooster465.autos
+      skip-cert-verify: false
+      sni: pure-kodiak.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149491
+      password: humanity
+      port: 443
+      server: 104.16.85.85
       skip-cert-verify: true
-      sni: vpn-de-002.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145754
-      password: 099830134df5ac3a04a4b21d39b8c395
-      port: 50160
-      server: 163.192.14.135
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149505
+      password: humanity
+      port: 443
+      server: 166.1.36.83
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149511
+      password: humanity
+      port: 443
+      server: 45.130.125.75
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149521
+      password: humanity
+      port: 443
+      server: 104.18.4.5
       skip-cert-verify: true
-      sni: vk.com
-      type: hysteria2
-    - name: hysteria2-1827145756
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149524
+      password: e309e031-991e-4656-9934-44d10deb8fd8
+      port: 2053
+      server: nimm.mpd.cc.cd
+      skip-cert-verify: true
+      sni: nimm.mpd.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827149526
+      password: UX82473651
+      port: 443
+      server: pretty-rat.rooster465.autos
+      skip-cert-verify: false
+      sni: pretty-rat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149527
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149530
+      password: UX82473651
+      port: 443
+      server: simple-molly.rooster465.autos
+      skip-cert-verify: false
+      sni: simple-molly.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149532
+      password: UX82473651
+      port: 443
+      server: simple-molly.rooster465.autos
+      skip-cert-verify: true
+      sni: simple-molly.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827149534
+      password: humanity
+      port: 443
+      server: 45.130.125.190
+      skip-cert-verify: true
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149553
+      password: humanity
+      port: 443
+      server: 104.18.35.86
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149554
+      password: humanity
+      port: 443
+      server: 5.253.189.238
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149556
+      password: humanity
+      port: 443
+      server: www.calmlunch.com
       skip-cert-verify: false
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145758
-      password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
-      skip-cert-verify: true
-      sni: finkawwwbroy5.qcloud.surf
-      type: hysteria2
-    - name: hysteria2-1827145785
-      password: 529f1911-04d5-4427-94b9-c851fd459a27
+      type: trojan
+      udp: true
+    - name: trojan-1827149560
+      password: humanity
       port: 443
-      server: nl-hy-test.tcp-reset-club.net
+      server: 172.67.231.254
       skip-cert-verify: false
-      sni: tcp-reset-club.net
-      type: hysteria2
-    - name: hysteria2-1827145791
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149584
+      password: humanity
       port: 443
-      server: vpn-tw-002.fastervpn.world
+      server: 213.1.145.50
       skip-cert-verify: true
-      sni: whatsapp.com
-      type: hysteria2
-    - name: hysteria2-1827145795
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149592
+      password: humanity
       port: 443
-      server: 3.75.178.53
+      server: 172.64.150.28
       skip-cert-verify: true
-      sni: vpn-de-002.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145810
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149594
+      password: humanity
       port: 443
-      server: 103.115.109.49
-      skip-cert-verify: true
-      sni: t.me
-      type: hysteria2
-    - name: hysteria2-1827145828
-      password: 408c51e8-9246-483d-ba73-34ab4e202eb9
-      port: 20326
-      server: finkawwwbroy5.qcloud.surf
+      server: 185.220.100.168
       skip-cert-verify: false
-      sni: ""
-      type: hysteria2
-    - name: hysteria2-1827145863
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149612
+      password: humanity
       port: 443
-      server: vpn-au-001.fastervpn.world
-      skip-cert-verify: true
-      sni: vpn-au-001.fastervpn.world
-      type: hysteria2
-    - name: hysteria2-1827145886
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      server: 45.130.125.76
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149617
+      password: humanity
       port: 443
-      server: 202.146.222.29
-      skip-cert-verify: true
-      sni: 202.146.222.29
-      type: hysteria2
-    - name: hysteria2-1827187993
-      password: bce6c821-200d-421f-bf3d-7159e5246ea0
-      port: 33333
-      server: hy2.123266.xyz
-      skip-cert-verify: true
-      sni: hy2.123266.xyz
-      type: hysteria2
-    - name: hysteria2-1827187994
-      password: 529f1911-04d5-4427-94b9-c851fd459a27
+      server: 104.17.147.22
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149628
+      password: humanity
       port: 443
-      server: 109.235.49.234
-      skip-cert-verify: true
-      sni: tcp-reset-club.net
-      type: hysteria2
-    - name: hysteria2-1827534209
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      server: 190.93.245.148
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149631
+      password: humanity
       port: 443
-      server: 103.115.109.49
-      skip-cert-verify: true
-      sni: https://t.me/oneclickvpnkeys
-      type: hysteria2
-    - name: hysteria2-1827534250
-      password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+      server: 144.31.205.106
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827149640
+      password: humanity
       port: 443
-      server: vpn-tw-002.fastervpn.world
-      skip-cert-verify: true
-      sni: 127.0.0.1
-      type: hysteria2
-    - name: hysteria2-1827543200
-      password: 8bd04756-3beb-4348-82c9-d35453df50ce
-      port: 21223
-      server: sweedenqfds777.qcloud.surf
+      server: www.calmlunch.com
       skip-cert-verify: true
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827727762
-      password: 1beb216e3f60aea9555dae60d219a5ca
-      port: 50160
-      server: 152.69.231.175
-      skip-cert-verify: false
-      sni: 152-69-231-175.liao.kdns.fr
-      type: hysteria2
-    - name: hysteria2-1827727763
-      password: e7438b3190e185e1a0e529673fc0588efc85070295f51a893a44b8ce7812c235
+      type: trojan
+      udp: true
+    - name: trojan-1827149645
+      password: humanity
       port: 443
-      server: 34.150.46.137
+      server: www.calmlunch.com
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827149651
+      password: XuMweB2PWs
+      port: 45464
+      server: 2.27.109.179
+      skip-cert-verify: false
+      sni: 2.27.109.179.sslip.io
+      type: trojan
+      udp: true
+    - name: trojan-1827149654
+      password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+      port: 8886
+      server: 45.32.52.173
+      skip-cert-verify: true
+      sni: 45.32.52.173
+      type: trojan
+      udp: true
+    - name: trojan-1827149658
+      password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+      port: 449
+      server: 109.206.241.10
       skip-cert-verify: true
       sni: ""
-      type: hysteria2
-    - name: hysteria2-1827784259
-      password: 43c6e610-03e3-4b6d-9abd-a4bfe7cc0aa9
-      port: 54183
-      server: outh.yandex-cloud.org
+      type: trojan
+      udp: true
+    - name: trojan-1827162774
+      password: humanity
+      port: 443
+      server: 188.114.97.6
       skip-cert-verify: false
-      sni: outh.yandex-cloud.org
-      type: hysteria2
-    - name: hysteria2-1827784271
-      password: d0589fb6-420b-4078-a72a-66d270a25fd9
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827162787
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827162790
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827187995
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188002
+      password: humanity
+      port: 443
+      server: 8.47.69.0
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827188101
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827188109
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827188119
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188124
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188127
+      password: humanity
+      port: 443
+      server: 104.18.35.86
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188162
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188215
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188225
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188233
+      password: humanity
+      port: 443
+      server: 188.114.97.6
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827188297
+      password: humanity
+      port: 443
+      server: 8.47.69.0
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827188340
+      password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+      port: 8886
+      server: 139.180.146.200
+      skip-cert-verify: true
+      sni: 139.180.146.200
+      type: trojan
+      udp: true
+    - name: trojan-1827188605
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827188676
+      password: humanity
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827517596
+      password: mitivpn
+      port: 443
+      server: 151.101.38.6
+      skip-cert-verify: true
+      sni: www.firefox.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529821
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529831
+      password: humanity
+      port: 443
+      server: 46.62.204.134
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827529841
+      password: humanity
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529842
+      password: humanity
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529850
+      password: humanity
+      port: 443
+      server: 104.18.4.5
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529855
+      password: humanity
+      port: 443
+      server: 188.42.145.180
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529862
+      password: humanity
+      port: 443
+      server: 104.16.72.41
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529873
+      password: humanity
+      port: 443
+      server: 104.21.37.56
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529887
+      password: humanity
+      port: 443
+      server: 144.31.205.106
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827529898
+      password: humanity
+      port: 443
+      server: 172.64.152.23
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827529899
+      password: e309e031-991e-4656-9934-44d10deb8fd8
+      port: 443
+      server: 188.114.98.0
+      skip-cert-verify: false
+      sni: nimm.mpd.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827529903
+      password: humanity
+      port: 443
+      server: 104.17.44.17
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827529909
+      password: humanity
+      port: 443
+      server: 104.21.37.56
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827530434
+      password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+      port: 449
+      server: 109.206.241.10
+      skip-cert-verify: true
+      sni: russiapower.accesscam.org
+      type: trojan
+      udp: true
+    - name: trojan-1827530478
+      password: humanity
+      port: 443
+      server: 8.47.69.0
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827530523
+      password: humanity
+      port: 443
+      server: 46.62.230.149
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827530542
+      password: humanity
+      port: 443
+      server: 8.47.69.0
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827534197
+      password: humanity
+      port: 443
+      server: 104.19.229.21
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827543363
+      password: humanity
+      port: 443
+      server: 45.130.125.160
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827613948
+      password: nwilryafgkyvuxauc8pz
+      port: 50875
+      server: 69.164.240.85
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827658988
+      password: mitivpn
+      port: 443
+      server: 199.232.78.160
+      skip-cert-verify: true
+      sni: google.com
+      type: trojan
+      udp: true
+    - name: trojan-1827658992
+      password: mitivpn
+      port: 443
+      server: 167.82.64.46
+      skip-cert-verify: true
+      sni: firefox.com
+      type: trojan
+      udp: true
+    - name: trojan-1827727389
+      password: 19877587-ed94-4033-88cd-4ac50a5e8718
+      port: 443
+      server: 104.18.153.182
+      skip-cert-verify: false
+      sni: dimskiee.biz.id
+      type: trojan
+      udp: true
+    - name: trojan-1827731533
+      password: humanity
+      port: 443
+      server: 172.67.139.14
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827731534
+      password: humanity
+      port: 443
+      server: 104.21.57.25
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827731535
+      password: humanity
+      port: 443
+      server: 46.8.228.165
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827731538
+      password: humanity
+      port: 443
+      server: 188.114.97.7
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827731539
+      password: humanity
+      port: 443
+      server: 188.114.97.8
+      skip-cert-verify: true
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827731540
+      password: humanity
+      port: 443
+      server: 188.114.97.1
+      skip-cert-verify: true
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827731541
+      password: av7fquzvuc99xcs9
       port: 2087
-      server: 185.233.187.188
+      server: 172.67.140.126
       skip-cert-verify: false
-      sni: fireedge.eaglors.com
-      type: hysteria2
-    - name: hysteria2-1827784274
-      password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-      port: 2053
-      server: 194.87.118.184
+      sni: uwu.dianaw.cc.cd
+      type: trojan
+      udp: true
+    - name: trojan-1827731542
+      password: humanity
+      port: 443
+      server: 188.114.97.5
+      skip-cert-verify: true
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827910127
+      password: humanity
+      port: 443
+      server: 104.16.85.85
       skip-cert-verify: false
-      sni: match-stream.lovkisport.blog
-      type: hysteria2
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827910362
+      password: humanity
+      port: 443
+      server: 104.16.72.2
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827910914
+      password: humanity
+      port: 443
+      server: 104.18.37.127
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827910972
+      password: humanity
+      port: 443
+      server: 104.19.64.105
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827911706
+      password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+      port: 443
+      server: 104.21.88.77
+      skip-cert-verify: false
+      sni: blackshadow.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827913054
+      password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+      port: 449
+      server: 109.206.241.10
+      skip-cert-verify: true
+      sni: russiapower.accesscam.org
+      type: trojan
+      udp: true
+    - name: trojan-1827926872
+      password: UX82473651
+      port: 443
+      server: 43.201.100.203
+      skip-cert-verify: false
+      sni: optimum-snapper.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827937125
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20036
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937156
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20017
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937160
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20050
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937169
+      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+      port: 20068
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937193
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20042
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937201
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20019
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937232
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20048
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937235
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20070
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937238
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20123
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937277
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20120
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937291
+      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+      port: 20041
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: de.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937300
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20064
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937357
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20007
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937384
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20086
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937389
+      password: 41c406e2-12b5-41f2-a329-d0621052d675
+      port: 20129
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937435
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20096
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937457
+      password: a126f35c-e832-4115-8593-b723ade3f7be
+      port: 20025
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937512
+      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+      port: 20004
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937524
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20020
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937525
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20011
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937575
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20065
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937583
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20039
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937588
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20104
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937614
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20083
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937638
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20114
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937641
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20060
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937662
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20089
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937726
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20117
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937727
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20106
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937733
+      password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+      port: 56127
+      server: 154.90.62.70
+      skip-cert-verify: true
+      sni: 154.90.62.70
+      type: trojan
+      udp: true
+    - name: trojan-1827937735
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20031
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937739
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20119
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937748
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20010
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937832
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20035
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937951
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20047
+      server: 157.254.38.210
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827937979
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20015
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827938054
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20062
+      server: 157.254.38.210
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827938301
+      password: humanity
+      port: 443
+      server: 162.159.228.224
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827938592
+      password: humanity
+      port: 443
+      server: 162.159.91.211
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827939961
+      password: humanity
+      port: 443
+      server: 172.67.118.45
+      skip-cert-verify: false
+      sni: www.volumeroot.com
+      type: trojan
+      udp: true
+    - name: trojan-1827941725
+      password: UX82473651
+      port: 443
+      server: 18.141.136.8
+      skip-cert-verify: false
+      sni: musical-mouse.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827944642
+      password: 41c406e2-12b5-41f2-a329-d0621052d675
+      port: 20088
+      server: 217.217.222.230
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944711
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 28482
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.sgj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944724
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 14517
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.jpj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944773
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 47519
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.jpj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944776
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 34933
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkh2.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944781
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 37086
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944800
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 40667
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.jpj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944813
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 24135
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.twj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944814
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 48591
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.sgj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944828
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 19152
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.twj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944832
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 15078
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkh2.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944862
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 41820
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944882
+      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+      port: 20120
+      server: 217.217.222.230
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944918
+      password: humanity
+      port: 443
+      server: 213.1.145.50
+      skip-cert-verify: false
+      sni: www.calmlunch.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944921
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 45994
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkh2.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944930
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 37738
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkh2.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944948
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 46912
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkh2.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944953
+      password: 41c406e2-12b5-41f2-a329-d0621052d675
+      port: 20034
+      server: 217.217.222.230
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944967
+      password: HOrViv
+      port: 28106
+      server: 209.248.32.116
+      skip-cert-verify: true
+      sni: download.windowsupdate.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944982
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 21737
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.jpj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827944993
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 58417
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945017
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 44097
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.hkj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945020
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 33889
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.usj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945025
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 22356
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.sgj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945031
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20427
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.twj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945034
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 38873
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.usj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945059
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 10374
+      server: 218.33.111.30
+      skip-cert-verify: true
+      sni: d.twj1.cat.bilibili.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945145
+      password: 246fb793-8e5e-4015-943e-22f41e4ea4a5
+      port: 32019
+      server: 25c5dffa-d858-4b58-bbbb-bfc08e375d23.bnsepserv.com
+      skip-cert-verify: true
+      sni: pull-flv-q1-admin.douyincdn.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945443
+      password: 246fb793-8e5e-4015-943e-22f41e4ea4a5
+      port: 32029
+      server: 25c5dffa-d858-4b58-bbbb-bfc08e375d23.bnsepserv.com
+      skip-cert-verify: true
+      sni: pull-flv-q1-admin.douyincdn.com
+      type: trojan
+      udp: true
+    - name: trojan-1827945457
+      password: UX82473651
+      port: 443
+      server: 3.1.252.137
+      skip-cert-verify: false
+      sni: brave-tomcat.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827946131
+      password: 002023c45d18bca3eba2757bb683309a
+      port: 59443
+      server: 42.51.25.69
+      skip-cert-verify: true
+      sni: ja262.magiclampcloud.cn
+      type: trojan
+      udp: true
+    - name: trojan-1827946195
+      password: humanity
+      port: 443
+      server: 38.180.163.250
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827946772
+      password: M7v%w11Se*
+      port: 443
+      server: 35.246.185.109
+      skip-cert-verify: true
+      sni: dggg.wsone.icu
+      type: trojan
+      udp: true
+    - name: trojan-1827947379
+      password: 5931134d1cde66bf83a54acdfebe7ab2
+      port: 443
+      server: 47.250.84.25
+      skip-cert-verify: true
+      sni: 47.250.84.25
+      type: trojan
+      udp: true
+    - name: trojan-1827947560
+      password: humanity
+      port: 443
+      server: 46.225.77.98
+      skip-cert-verify: false
+      sni: www.pleadcourt.org
+      type: trojan
+      udp: true
+    - name: trojan-1827954607
+      password: UX82473651
+      port: 443
+      server: 54.151.181.75
+      skip-cert-verify: false
+      sni: moral-basilisk.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1827954847
+      password: e000f0d4-4f0e-4722-926f-f551d3e377c7
+      port: 32028
+      server: 514b5fc3-833e-430c-ba80-5370cde9c40e.bnsepserv.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827955817
+      password: nwilryafgkyvuxauc8pz
+      port: 50875
+      server: 69.164.240.85
+      skip-cert-verify: true
+      sni: 69.164.240.85
+      type: trojan
+      udp: true
+    - name: trojan-1827956432
+      password: sshs8_6481354771
+      port: 2087
+      server: 86.38.247.109
+      skip-cert-verify: false
+      sni: ul-singapore1.09vpn.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957376
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20004
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957395
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20047
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957413
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20010
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957426
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20052
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957429
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20077
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957460
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20103
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: ng.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957474
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20058
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957480
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20109
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957491
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20033
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957496
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20023
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957499
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20046
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957515
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20063
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957531
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20089
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957537
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20007
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957540
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20070
+      server: d3.catcat321.com
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957556
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20106
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957562
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20061
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957563
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20042
+      server: d3.catcat321.com
+      skip-cert-verify: false
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957566
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20039
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957570
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20087
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827957575
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20045
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958026
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20024
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958030
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20062
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958041
+      password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+      port: 443
+      server: blackshadow.dpdns.org
+      skip-cert-verify: false
+      sni: blackshadow.dpdns.org
+      type: trojan
+      udp: true
+    - name: trojan-1827958069
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20025
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958087
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20029
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958103
+      password: 0010996f-3eab-4804-9b3a-3a889d6767fc
+      port: 20056
+      server: a8zbx9xj.catcat321.com
+      skip-cert-verify: true
+      sni: a8zbx9xj.catcat321.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958131
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20051
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: ng.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958138
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20064
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958154
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20032
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958196
+      password: 63872b0d-87dd-4474-b690-92773af2922e
+      port: 20036
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958199
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20086
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958201
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20065
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958298
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20048
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958302
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20083
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958317
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20018
+      server: d3.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958324
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20104
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958371
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20062
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958387
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20006
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958414
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20137
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958427
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20118
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958449
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20151
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958457
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20127
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958469
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20047
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958471
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20070
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958480
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20148
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958482
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20063
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958510
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20022
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958530
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20083
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958534
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20123
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958539
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20092
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958550
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20058
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958556
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20031
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958564
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20113
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: ca.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958591
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20085
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958628
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20041
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: de.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958647
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20044
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958648
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20066
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958653
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20081
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958671
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20120
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958680
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20043
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958711
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20095
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958722
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20126
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958730
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20071
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958733
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20017
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958759
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20036
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958768
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20025
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958778
+      password: M7v%w11Se*
+      port: 443
+      server: hyfuuf6.wsone.icu
+      skip-cert-verify: true
+      sni: hyfuuf6.wsone.icu
+      type: trojan
+      udp: true
+    - name: trojan-1827958780
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20127
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958783
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20035
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958786
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20118
+      server: d3.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958787
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20126
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958789
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20126
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958806
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20024
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958827
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20045
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958840
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20061
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958854
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20096
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958856
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20052
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958876
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20032
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958894
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20068
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958899
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20119
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958921
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20150
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958923
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20003
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: de.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958930
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20072
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958936
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20086
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827958941
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20048
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959003
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20117
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959010
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20088
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959015
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20134
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959028
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20065
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959041
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20129
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959046
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20062
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959063
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20117
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959090
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20089
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959104
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20039
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959110
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20011
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959133
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20034
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959135
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20114
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827959156
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20123
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959157
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20033
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959160
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20149
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959173
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20120
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959177
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20013
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959179
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20020
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959193
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20042
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959201
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20001
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959220
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20046
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959221
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20066
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959222
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20060
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959244
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20146
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959247
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20056
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959249
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20085
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959252
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20023
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959254
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20114
+      server: d3.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959255
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20010
+      server: iepl.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959260
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20145
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959267
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20029
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959268
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20050
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959272
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20103
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827959284
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20051
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: ng.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959290
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20019
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959292
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20030
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959300
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20007
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959307
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20018
+      server: iepl2.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959309
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20087
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959314
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20129
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959316
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20098
+      server: iepl1.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959392
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20126
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959395
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20052
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959422
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20089
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959427
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20123
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959435
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20083
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959447
+      password: 0010996f-3eab-4804-9b3a-3a889d6767fc
+      port: 20095
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827959456
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20031
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959491
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20134
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959537
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20018
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959548
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20072
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959568
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20001
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959573
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20098
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959582
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20092
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959606
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20025
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959615
+      password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+      port: 20041
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: de.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959636
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20077
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959638
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20070
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959673
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20064
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959682
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20024
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959684
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20061
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959688
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20056
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959716
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20050
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959719
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20065
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959731
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20007
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959747
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20044
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959748
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20066
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959751
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20003
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827959783
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20030
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959797
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20035
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959804
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20086
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959810
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20046
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959815
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20036
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959816
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20043
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: us.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959824
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20049
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959826
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20117
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959833
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20022
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959841
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20039
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959843
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20032
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959861
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20015
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959887
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20047
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959908
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20118
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959933
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20063
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959936
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20085
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827959982
+      password: 1c8c770339adb746416981873a96c423
+      port: 59443
+      server: ja304.magiclampcloud.cn
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827960009
+      password: ed0ac307c27a5b8cd06c9712949a3b0e
+      port: 59443
+      server: ja262.magiclampcloud.cn
+      skip-cert-verify: false
+      sni: ja262.magiclampcloud.cn
+      type: trojan
+      udp: true
+    - name: trojan-1827960016
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20103
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: ng.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960027
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20113
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827960057
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20019
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960068
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20033
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960084
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20060
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: sg.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960102
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20010
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960107
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20058
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960119
+      password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+      port: 443
+      server: mfyousheng.nl.eu.org
+      skip-cert-verify: false
+      sni: mfyousheng.nl.eu.org
+      type: trojan
+      udp: true
+    - name: trojan-1827960122
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20023
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960146
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20013
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960149
+      password: 41c406e2-12b5-41f2-a329-d0621052d675
+      port: 20088
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960161
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20034
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960178
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20004
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960181
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20114
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960185
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20014
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960193
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20109
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960204
+      password: Trojan@82164024
+      port: 443
+      server: jp.tronsg.com
+      skip-cert-verify: false
+      sni: jp.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960212
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20048
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960215
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20006
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960217
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20081
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960222
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20020
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960230
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20106
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960233
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20120
+      server: krhtybay.catcat321.com
+      skip-cert-verify: false
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960252
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20062
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: hk.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960278
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20096
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827960284
+      password: 7e70223b-f331-41d5-9313-02b8d2df2885
+      port: 20045
+      server: krhtybay.catcat321.com
+      skip-cert-verify: true
+      sni: tw.catxstar.com
+      type: trojan
+      udp: true
+    - name: trojan-1827960514
+      password: Telegram_healer_config
+      port: 443
+      server: uh-e03ojzgq4ev7yy7b.6v46fk4wd2y8l5p2xtd.workers.dev
+      skip-cert-verify: false
+      sni: uh-e03ojzgq4ev7yy7b.6v46fk4wd2y8l5p2xtd.workers.dev
+      type: trojan
+      udp: true
+    - name: trojan-1827961087
+      password: 4d8e20bdae228d69021cdac530a5ce6d
+      port: 59443
+      server: tyy129.magiclampcloud.com
+      skip-cert-verify: false
+      sni: ""
+      type: trojan
+      udp: true
+    - name: trojan-1827988287
+      password: UX82473651
+      port: 443
+      server: 47.131.250.125
+      skip-cert-verify: false
+      sni: simple-molly.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1828126780
+      password: -RVFfqDgp7JvHDMa
+      port: 443
+      server: siderail-production-a994.up.railway.app
+      skip-cert-verify: false
+      sni: siderail-production-a994.up.railway.app
+      type: trojan
+      udp: true
+    - name: trojan-1828127745
+      password: UX82473651
+      port: 443
+      server: main-fawn.rooster465.autos
+      skip-cert-verify: false
+      sni: main-fawn.rooster465.autos
+      type: trojan
+      udp: true
+    - name: trojan-1828127749
+      password: Trojan@82164024
+      port: 443
+      server: 108.61.186.37
+      skip-cert-verify: false
+      sni: jp.tronsg.com
+      type: trojan
+      udp: true
+    - name: trojan-1828128619
+      password: XuMweB2PWs
+      port: 45464
+      server: 2.27.109.179
+      skip-cert-verify: false
+      sni: 2.27.109.179.sslip.io
+      type: trojan
+      udp: true
 proxy-groups:
     - interval: 300
       name: auto
       proxies:
-        - hysteria2-1827145002
-        - hysteria2-1827145009
-        - hysteria2-1827145019
-        - hysteria2-1827145041
-        - hysteria2-1827145045
-        - hysteria2-1827145058
-        - hysteria2-1827145061
-        - hysteria2-1827145109
-        - hysteria2-1827145136
-        - hysteria2-1827145140
-        - hysteria2-1827145144
-        - hysteria2-1827145146
-        - hysteria2-1827145159
-        - hysteria2-1827145162
-        - hysteria2-1827145166
-        - hysteria2-1827145172
-        - hysteria2-1827145205
-        - hysteria2-1827145223
-        - hysteria2-1827145241
-        - hysteria2-1827145246
-        - hysteria2-1827145249
-        - hysteria2-1827145259
-        - hysteria2-1827145273
-        - hysteria2-1827145278
-        - hysteria2-1827145281
-        - hysteria2-1827145282
-        - hysteria2-1827145293
-        - hysteria2-1827145305
-        - hysteria2-1827145311
-        - hysteria2-1827145323
-        - hysteria2-1827145354
-        - hysteria2-1827145356
-        - hysteria2-1827145371
-        - hysteria2-1827145380
-        - hysteria2-1827145400
-        - hysteria2-1827145413
-        - hysteria2-1827145430
-        - hysteria2-1827145434
-        - hysteria2-1827145474
-        - hysteria2-1827145501
-        - hysteria2-1827145511
-        - hysteria2-1827145519
-        - hysteria2-1827145540
-        - hysteria2-1827145550
-        - hysteria2-1827145587
-        - hysteria2-1827145588
-        - hysteria2-1827145601
-        - hysteria2-1827145610
-        - hysteria2-1827145617
-        - hysteria2-1827145632
-        - hysteria2-1827145638
-        - hysteria2-1827145643
-        - hysteria2-1827145649
-        - hysteria2-1827145654
-        - hysteria2-1827145660
-        - hysteria2-1827145665
-        - hysteria2-1827145683
-        - hysteria2-1827145686
-        - hysteria2-1827145692
-        - hysteria2-1827145698
-        - hysteria2-1827145711
-        - hysteria2-1827145719
-        - hysteria2-1827145748
-        - hysteria2-1827145754
-        - hysteria2-1827145756
-        - hysteria2-1827145758
-        - hysteria2-1827145785
-        - hysteria2-1827145791
-        - hysteria2-1827145795
-        - hysteria2-1827145810
-        - hysteria2-1827145828
-        - hysteria2-1827145863
-        - hysteria2-1827145886
-        - hysteria2-1827187993
-        - hysteria2-1827187994
-        - hysteria2-1827534209
-        - hysteria2-1827534250
-        - hysteria2-1827543200
-        - hysteria2-1827727762
-        - hysteria2-1827727763
-        - hysteria2-1827784259
-        - hysteria2-1827784271
-        - hysteria2-1827784274
+        - trojan-1827147003
+        - trojan-1827147122
+        - trojan-1827147236
+        - trojan-1827147300
+        - trojan-1827147576
+        - trojan-1827147641
+        - trojan-1827147881
+        - trojan-1827147893
+        - trojan-1827147901
+        - trojan-1827147907
+        - trojan-1827147915
+        - trojan-1827147920
+        - trojan-1827147925
+        - trojan-1827147928
+        - trojan-1827147936
+        - trojan-1827147939
+        - trojan-1827147942
+        - trojan-1827147947
+        - trojan-1827147951
+        - trojan-1827147955
+        - trojan-1827147964
+        - trojan-1827147965
+        - trojan-1827147969
+        - trojan-1827147982
+        - trojan-1827147986
+        - trojan-1827147998
+        - trojan-1827148025
+        - trojan-1827148029
+        - trojan-1827148039
+        - trojan-1827148049
+        - trojan-1827148054
+        - trojan-1827148057
+        - trojan-1827148117
+        - trojan-1827148119
+        - trojan-1827148128
+        - trojan-1827148132
+        - trojan-1827148150
+        - trojan-1827148156
+        - trojan-1827148174
+        - trojan-1827148178
+        - trojan-1827148186
+        - trojan-1827148192
+        - trojan-1827148194
+        - trojan-1827148220
+        - trojan-1827148231
+        - trojan-1827148233
+        - trojan-1827148252
+        - trojan-1827148260
+        - trojan-1827148261
+        - trojan-1827148270
+        - trojan-1827148275
+        - trojan-1827148287
+        - trojan-1827148301
+        - trojan-1827148322
+        - trojan-1827148325
+        - trojan-1827148330
+        - trojan-1827148342
+        - trojan-1827148345
+        - trojan-1827148348
+        - trojan-1827148349
+        - trojan-1827148362
+        - trojan-1827148379
+        - trojan-1827148395
+        - trojan-1827148399
+        - trojan-1827148419
+        - trojan-1827148420
+        - trojan-1827148424
+        - trojan-1827148426
+        - trojan-1827148454
+        - trojan-1827148462
+        - trojan-1827148465
+        - trojan-1827148518
+        - trojan-1827148526
+        - trojan-1827148532
+        - trojan-1827148571
+        - trojan-1827148577
+        - trojan-1827148610
+        - trojan-1827148613
+        - trojan-1827148633
+        - trojan-1827148694
+        - trojan-1827148723
+        - trojan-1827148740
+        - trojan-1827148743
+        - trojan-1827148746
+        - trojan-1827148749
+        - trojan-1827148780
+        - trojan-1827148785
+        - trojan-1827148804
+        - trojan-1827148805
+        - trojan-1827148809
+        - trojan-1827148810
+        - trojan-1827148813
+        - trojan-1827148818
+        - trojan-1827148822
+        - trojan-1827148827
+        - trojan-1827148830
+        - trojan-1827148841
+        - trojan-1827148845
+        - trojan-1827148848
+        - trojan-1827148852
+        - trojan-1827148859
+        - trojan-1827148864
+        - trojan-1827148866
+        - trojan-1827148893
+        - trojan-1827148938
+        - trojan-1827148954
+        - trojan-1827148972
+        - trojan-1827148973
+        - trojan-1827148991
+        - trojan-1827149009
+        - trojan-1827149025
+        - trojan-1827149027
+        - trojan-1827149050
+        - trojan-1827149065
+        - trojan-1827149073
+        - trojan-1827149085
+        - trojan-1827149094
+        - trojan-1827149095
+        - trojan-1827149098
+        - trojan-1827149104
+        - trojan-1827149109
+        - trojan-1827149125
+        - trojan-1827149139
+        - trojan-1827149167
+        - trojan-1827149191
+        - trojan-1827149202
+        - trojan-1827149233
+        - trojan-1827149277
+        - trojan-1827149283
+        - trojan-1827149293
+        - trojan-1827149305
+        - trojan-1827149323
+        - trojan-1827149338
+        - trojan-1827149346
+        - trojan-1827149348
+        - trojan-1827149351
+        - trojan-1827149364
+        - trojan-1827149365
+        - trojan-1827149379
+        - trojan-1827149383
+        - trojan-1827149401
+        - trojan-1827149417
+        - trojan-1827149419
+        - trojan-1827149430
+        - trojan-1827149432
+        - trojan-1827149438
+        - trojan-1827149439
+        - trojan-1827149445
+        - trojan-1827149456
+        - trojan-1827149490
+        - trojan-1827149491
+        - trojan-1827149505
+        - trojan-1827149511
+        - trojan-1827149521
+        - trojan-1827149524
+        - trojan-1827149526
+        - trojan-1827149527
+        - trojan-1827149530
+        - trojan-1827149532
+        - trojan-1827149534
+        - trojan-1827149553
+        - trojan-1827149554
+        - trojan-1827149556
+        - trojan-1827149560
+        - trojan-1827149584
+        - trojan-1827149592
+        - trojan-1827149594
+        - trojan-1827149612
+        - trojan-1827149617
+        - trojan-1827149628
+        - trojan-1827149631
+        - trojan-1827149640
+        - trojan-1827149645
+        - trojan-1827149651
+        - trojan-1827149654
+        - trojan-1827149658
+        - trojan-1827162774
+        - trojan-1827162787
+        - trojan-1827162790
+        - trojan-1827187995
+        - trojan-1827188002
+        - trojan-1827188101
+        - trojan-1827188109
+        - trojan-1827188119
+        - trojan-1827188124
+        - trojan-1827188127
+        - trojan-1827188162
+        - trojan-1827188215
+        - trojan-1827188225
+        - trojan-1827188233
+        - trojan-1827188297
+        - trojan-1827188340
+        - trojan-1827188605
+        - trojan-1827188676
+        - trojan-1827517596
+        - trojan-1827529821
+        - trojan-1827529831
+        - trojan-1827529841
+        - trojan-1827529842
+        - trojan-1827529850
+        - trojan-1827529855
+        - trojan-1827529862
+        - trojan-1827529873
+        - trojan-1827529887
+        - trojan-1827529898
+        - trojan-1827529899
+        - trojan-1827529903
+        - trojan-1827529909
+        - trojan-1827530434
+        - trojan-1827530478
+        - trojan-1827530523
+        - trojan-1827530542
+        - trojan-1827534197
+        - trojan-1827543363
+        - trojan-1827613948
+        - trojan-1827658988
+        - trojan-1827658992
+        - trojan-1827727389
+        - trojan-1827731533
+        - trojan-1827731534
+        - trojan-1827731535
+        - trojan-1827731538
+        - trojan-1827731539
+        - trojan-1827731540
+        - trojan-1827731541
+        - trojan-1827731542
+        - trojan-1827910127
+        - trojan-1827910362
+        - trojan-1827910914
+        - trojan-1827910972
+        - trojan-1827911706
+        - trojan-1827913054
+        - trojan-1827926872
+        - trojan-1827937125
+        - trojan-1827937156
+        - trojan-1827937160
+        - trojan-1827937169
+        - trojan-1827937193
+        - trojan-1827937201
+        - trojan-1827937232
+        - trojan-1827937235
+        - trojan-1827937238
+        - trojan-1827937277
+        - trojan-1827937291
+        - trojan-1827937300
+        - trojan-1827937357
+        - trojan-1827937384
+        - trojan-1827937389
+        - trojan-1827937435
+        - trojan-1827937457
+        - trojan-1827937512
+        - trojan-1827937524
+        - trojan-1827937525
+        - trojan-1827937575
+        - trojan-1827937583
+        - trojan-1827937588
+        - trojan-1827937614
+        - trojan-1827937638
+        - trojan-1827937641
+        - trojan-1827937662
+        - trojan-1827937726
+        - trojan-1827937727
+        - trojan-1827937733
+        - trojan-1827937735
+        - trojan-1827937739
+        - trojan-1827937748
+        - trojan-1827937832
+        - trojan-1827937951
+        - trojan-1827937979
+        - trojan-1827938054
+        - trojan-1827938301
+        - trojan-1827938592
+        - trojan-1827939961
+        - trojan-1827941725
+        - trojan-1827944642
+        - trojan-1827944711
+        - trojan-1827944724
+        - trojan-1827944773
+        - trojan-1827944776
+        - trojan-1827944781
+        - trojan-1827944800
+        - trojan-1827944813
+        - trojan-1827944814
+        - trojan-1827944828
+        - trojan-1827944832
+        - trojan-1827944862
+        - trojan-1827944882
+        - trojan-1827944918
+        - trojan-1827944921
+        - trojan-1827944930
+        - trojan-1827944948
+        - trojan-1827944953
+        - trojan-1827944967
+        - trojan-1827944982
+        - trojan-1827944993
+        - trojan-1827945017
+        - trojan-1827945020
+        - trojan-1827945025
+        - trojan-1827945031
+        - trojan-1827945034
+        - trojan-1827945059
+        - trojan-1827945145
+        - trojan-1827945443
+        - trojan-1827945457
+        - trojan-1827946131
+        - trojan-1827946195
+        - trojan-1827946772
+        - trojan-1827947379
+        - trojan-1827947560
+        - trojan-1827954607
+        - trojan-1827954847
+        - trojan-1827955817
+        - trojan-1827956432
+        - trojan-1827957376
+        - trojan-1827957395
+        - trojan-1827957413
+        - trojan-1827957426
+        - trojan-1827957429
+        - trojan-1827957460
+        - trojan-1827957474
+        - trojan-1827957480
+        - trojan-1827957491
+        - trojan-1827957496
+        - trojan-1827957499
+        - trojan-1827957515
+        - trojan-1827957531
+        - trojan-1827957537
+        - trojan-1827957540
+        - trojan-1827957556
+        - trojan-1827957562
+        - trojan-1827957563
+        - trojan-1827957566
+        - trojan-1827957570
+        - trojan-1827957575
+        - trojan-1827958026
+        - trojan-1827958030
+        - trojan-1827958041
+        - trojan-1827958069
+        - trojan-1827958087
+        - trojan-1827958103
+        - trojan-1827958131
+        - trojan-1827958138
+        - trojan-1827958154
+        - trojan-1827958196
+        - trojan-1827958199
+        - trojan-1827958201
+        - trojan-1827958298
+        - trojan-1827958302
+        - trojan-1827958317
+        - trojan-1827958324
+        - trojan-1827958371
+        - trojan-1827958387
+        - trojan-1827958414
+        - trojan-1827958427
+        - trojan-1827958449
+        - trojan-1827958457
+        - trojan-1827958469
+        - trojan-1827958471
+        - trojan-1827958480
+        - trojan-1827958482
+        - trojan-1827958510
+        - trojan-1827958530
+        - trojan-1827958534
+        - trojan-1827958539
+        - trojan-1827958550
+        - trojan-1827958556
+        - trojan-1827958564
+        - trojan-1827958591
+        - trojan-1827958628
+        - trojan-1827958647
+        - trojan-1827958648
+        - trojan-1827958653
+        - trojan-1827958671
+        - trojan-1827958680
+        - trojan-1827958711
+        - trojan-1827958722
+        - trojan-1827958730
+        - trojan-1827958733
+        - trojan-1827958759
+        - trojan-1827958768
+        - trojan-1827958778
+        - trojan-1827958780
+        - trojan-1827958783
+        - trojan-1827958786
+        - trojan-1827958787
+        - trojan-1827958789
+        - trojan-1827958806
+        - trojan-1827958827
+        - trojan-1827958840
+        - trojan-1827958854
+        - trojan-1827958856
+        - trojan-1827958876
+        - trojan-1827958894
+        - trojan-1827958899
+        - trojan-1827958921
+        - trojan-1827958923
+        - trojan-1827958930
+        - trojan-1827958936
+        - trojan-1827958941
+        - trojan-1827959003
+        - trojan-1827959010
+        - trojan-1827959015
+        - trojan-1827959028
+        - trojan-1827959041
+        - trojan-1827959046
+        - trojan-1827959063
+        - trojan-1827959090
+        - trojan-1827959104
+        - trojan-1827959110
+        - trojan-1827959133
+        - trojan-1827959135
+        - trojan-1827959156
+        - trojan-1827959157
+        - trojan-1827959160
+        - trojan-1827959173
+        - trojan-1827959177
+        - trojan-1827959179
+        - trojan-1827959193
+        - trojan-1827959201
+        - trojan-1827959220
+        - trojan-1827959221
+        - trojan-1827959222
+        - trojan-1827959244
+        - trojan-1827959247
+        - trojan-1827959249
+        - trojan-1827959252
+        - trojan-1827959254
+        - trojan-1827959255
+        - trojan-1827959260
+        - trojan-1827959267
+        - trojan-1827959268
+        - trojan-1827959272
+        - trojan-1827959284
+        - trojan-1827959290
+        - trojan-1827959292
+        - trojan-1827959300
+        - trojan-1827959307
+        - trojan-1827959309
+        - trojan-1827959314
+        - trojan-1827959316
+        - trojan-1827959392
+        - trojan-1827959395
+        - trojan-1827959422
+        - trojan-1827959427
+        - trojan-1827959435
+        - trojan-1827959447
+        - trojan-1827959456
+        - trojan-1827959491
+        - trojan-1827959537
+        - trojan-1827959548
+        - trojan-1827959568
+        - trojan-1827959573
+        - trojan-1827959582
+        - trojan-1827959606
+        - trojan-1827959615
+        - trojan-1827959636
+        - trojan-1827959638
+        - trojan-1827959673
+        - trojan-1827959682
+        - trojan-1827959684
+        - trojan-1827959688
+        - trojan-1827959716
+        - trojan-1827959719
+        - trojan-1827959731
+        - trojan-1827959747
+        - trojan-1827959748
+        - trojan-1827959751
+        - trojan-1827959783
+        - trojan-1827959797
+        - trojan-1827959804
+        - trojan-1827959810
+        - trojan-1827959815
+        - trojan-1827959816
+        - trojan-1827959824
+        - trojan-1827959826
+        - trojan-1827959833
+        - trojan-1827959841
+        - trojan-1827959843
+        - trojan-1827959861
+        - trojan-1827959887
+        - trojan-1827959908
+        - trojan-1827959933
+        - trojan-1827959936
+        - trojan-1827959982
+        - trojan-1827960009
+        - trojan-1827960016
+        - trojan-1827960027
+        - trojan-1827960057
+        - trojan-1827960068
+        - trojan-1827960084
+        - trojan-1827960102
+        - trojan-1827960107
+        - trojan-1827960119
+        - trojan-1827960122
+        - trojan-1827960146
+        - trojan-1827960149
+        - trojan-1827960161
+        - trojan-1827960178
+        - trojan-1827960181
+        - trojan-1827960185
+        - trojan-1827960193
+        - trojan-1827960204
+        - trojan-1827960212
+        - trojan-1827960215
+        - trojan-1827960217
+        - trojan-1827960222
+        - trojan-1827960230
+        - trojan-1827960233
+        - trojan-1827960252
+        - trojan-1827960278
+        - trojan-1827960284
+        - trojan-1827960514
+        - trojan-1827961087
+        - trojan-1827988287
+        - trojan-1828126780
+        - trojan-1828127745
+        - trojan-1828127749
+        - trojan-1828128619
       type: url-test
       url: https://www.gstatic.com/generate_204
     - name: select
       proxies:
         - auto
-        - hysteria2-1827145002
-        - hysteria2-1827145009
-        - hysteria2-1827145019
-        - hysteria2-1827145041
-        - hysteria2-1827145045
-        - hysteria2-1827145058
-        - hysteria2-1827145061
-        - hysteria2-1827145109
-        - hysteria2-1827145136
-        - hysteria2-1827145140
-        - hysteria2-1827145144
-        - hysteria2-1827145146
-        - hysteria2-1827145159
-        - hysteria2-1827145162
-        - hysteria2-1827145166
-        - hysteria2-1827145172
-        - hysteria2-1827145205
-        - hysteria2-1827145223
-        - hysteria2-1827145241
-        - hysteria2-1827145246
-        - hysteria2-1827145249
-        - hysteria2-1827145259
-        - hysteria2-1827145273
-        - hysteria2-1827145278
-        - hysteria2-1827145281
-        - hysteria2-1827145282
-        - hysteria2-1827145293
-        - hysteria2-1827145305
-        - hysteria2-1827145311
-        - hysteria2-1827145323
-        - hysteria2-1827145354
-        - hysteria2-1827145356
-        - hysteria2-1827145371
-        - hysteria2-1827145380
-        - hysteria2-1827145400
-        - hysteria2-1827145413
-        - hysteria2-1827145430
-        - hysteria2-1827145434
-        - hysteria2-1827145474
-        - hysteria2-1827145501
-        - hysteria2-1827145511
-        - hysteria2-1827145519
-        - hysteria2-1827145540
-        - hysteria2-1827145550
-        - hysteria2-1827145587
-        - hysteria2-1827145588
-        - hysteria2-1827145601
-        - hysteria2-1827145610
-        - hysteria2-1827145617
-        - hysteria2-1827145632
-        - hysteria2-1827145638
-        - hysteria2-1827145643
-        - hysteria2-1827145649
-        - hysteria2-1827145654
-        - hysteria2-1827145660
-        - hysteria2-1827145665
-        - hysteria2-1827145683
-        - hysteria2-1827145686
-        - hysteria2-1827145692
-        - hysteria2-1827145698
-        - hysteria2-1827145711
-        - hysteria2-1827145719
-        - hysteria2-1827145748
-        - hysteria2-1827145754
-        - hysteria2-1827145756
-        - hysteria2-1827145758
-        - hysteria2-1827145785
-        - hysteria2-1827145791
-        - hysteria2-1827145795
-        - hysteria2-1827145810
-        - hysteria2-1827145828
-        - hysteria2-1827145863
-        - hysteria2-1827145886
-        - hysteria2-1827187993
-        - hysteria2-1827187994
-        - hysteria2-1827534209
-        - hysteria2-1827534250
-        - hysteria2-1827543200
-        - hysteria2-1827727762
-        - hysteria2-1827727763
-        - hysteria2-1827784259
-        - hysteria2-1827784271
-        - hysteria2-1827784274
+        - trojan-1827147003
+        - trojan-1827147122
+        - trojan-1827147236
+        - trojan-1827147300
+        - trojan-1827147576
+        - trojan-1827147641
+        - trojan-1827147881
+        - trojan-1827147893
+        - trojan-1827147901
+        - trojan-1827147907
+        - trojan-1827147915
+        - trojan-1827147920
+        - trojan-1827147925
+        - trojan-1827147928
+        - trojan-1827147936
+        - trojan-1827147939
+        - trojan-1827147942
+        - trojan-1827147947
+        - trojan-1827147951
+        - trojan-1827147955
+        - trojan-1827147964
+        - trojan-1827147965
+        - trojan-1827147969
+        - trojan-1827147982
+        - trojan-1827147986
+        - trojan-1827147998
+        - trojan-1827148025
+        - trojan-1827148029
+        - trojan-1827148039
+        - trojan-1827148049
+        - trojan-1827148054
+        - trojan-1827148057
+        - trojan-1827148117
+        - trojan-1827148119
+        - trojan-1827148128
+        - trojan-1827148132
+        - trojan-1827148150
+        - trojan-1827148156
+        - trojan-1827148174
+        - trojan-1827148178
+        - trojan-1827148186
+        - trojan-1827148192
+        - trojan-1827148194
+        - trojan-1827148220
+        - trojan-1827148231
+        - trojan-1827148233
+        - trojan-1827148252
+        - trojan-1827148260
+        - trojan-1827148261
+        - trojan-1827148270
+        - trojan-1827148275
+        - trojan-1827148287
+        - trojan-1827148301
+        - trojan-1827148322
+        - trojan-1827148325
+        - trojan-1827148330
+        - trojan-1827148342
+        - trojan-1827148345
+        - trojan-1827148348
+        - trojan-1827148349
+        - trojan-1827148362
+        - trojan-1827148379
+        - trojan-1827148395
+        - trojan-1827148399
+        - trojan-1827148419
+        - trojan-1827148420
+        - trojan-1827148424
+        - trojan-1827148426
+        - trojan-1827148454
+        - trojan-1827148462
+        - trojan-1827148465
+        - trojan-1827148518
+        - trojan-1827148526
+        - trojan-1827148532
+        - trojan-1827148571
+        - trojan-1827148577
+        - trojan-1827148610
+        - trojan-1827148613
+        - trojan-1827148633
+        - trojan-1827148694
+        - trojan-1827148723
+        - trojan-1827148740
+        - trojan-1827148743
+        - trojan-1827148746
+        - trojan-1827148749
+        - trojan-1827148780
+        - trojan-1827148785
+        - trojan-1827148804
+        - trojan-1827148805
+        - trojan-1827148809
+        - trojan-1827148810
+        - trojan-1827148813
+        - trojan-1827148818
+        - trojan-1827148822
+        - trojan-1827148827
+        - trojan-1827148830
+        - trojan-1827148841
+        - trojan-1827148845
+        - trojan-1827148848
+        - trojan-1827148852
+        - trojan-1827148859
+        - trojan-1827148864
+        - trojan-1827148866
+        - trojan-1827148893
+        - trojan-1827148938
+        - trojan-1827148954
+        - trojan-1827148972
+        - trojan-1827148973
+        - trojan-1827148991
+        - trojan-1827149009
+        - trojan-1827149025
+        - trojan-1827149027
+        - trojan-1827149050
+        - trojan-1827149065
+        - trojan-1827149073
+        - trojan-1827149085
+        - trojan-1827149094
+        - trojan-1827149095
+        - trojan-1827149098
+        - trojan-1827149104
+        - trojan-1827149109
+        - trojan-1827149125
+        - trojan-1827149139
+        - trojan-1827149167
+        - trojan-1827149191
+        - trojan-1827149202
+        - trojan-1827149233
+        - trojan-1827149277
+        - trojan-1827149283
+        - trojan-1827149293
+        - trojan-1827149305
+        - trojan-1827149323
+        - trojan-1827149338
+        - trojan-1827149346
+        - trojan-1827149348
+        - trojan-1827149351
+        - trojan-1827149364
+        - trojan-1827149365
+        - trojan-1827149379
+        - trojan-1827149383
+        - trojan-1827149401
+        - trojan-1827149417
+        - trojan-1827149419
+        - trojan-1827149430
+        - trojan-1827149432
+        - trojan-1827149438
+        - trojan-1827149439
+        - trojan-1827149445
+        - trojan-1827149456
+        - trojan-1827149490
+        - trojan-1827149491
+        - trojan-1827149505
+        - trojan-1827149511
+        - trojan-1827149521
+        - trojan-1827149524
+        - trojan-1827149526
+        - trojan-1827149527
+        - trojan-1827149530
+        - trojan-1827149532
+        - trojan-1827149534
+        - trojan-1827149553
+        - trojan-1827149554
+        - trojan-1827149556
+        - trojan-1827149560
+        - trojan-1827149584
+        - trojan-1827149592
+        - trojan-1827149594
+        - trojan-1827149612
+        - trojan-1827149617
+        - trojan-1827149628
+        - trojan-1827149631
+        - trojan-1827149640
+        - trojan-1827149645
+        - trojan-1827149651
+        - trojan-1827149654
+        - trojan-1827149658
+        - trojan-1827162774
+        - trojan-1827162787
+        - trojan-1827162790
+        - trojan-1827187995
+        - trojan-1827188002
+        - trojan-1827188101
+        - trojan-1827188109
+        - trojan-1827188119
+        - trojan-1827188124
+        - trojan-1827188127
+        - trojan-1827188162
+        - trojan-1827188215
+        - trojan-1827188225
+        - trojan-1827188233
+        - trojan-1827188297
+        - trojan-1827188340
+        - trojan-1827188605
+        - trojan-1827188676
+        - trojan-1827517596
+        - trojan-1827529821
+        - trojan-1827529831
+        - trojan-1827529841
+        - trojan-1827529842
+        - trojan-1827529850
+        - trojan-1827529855
+        - trojan-1827529862
+        - trojan-1827529873
+        - trojan-1827529887
+        - trojan-1827529898
+        - trojan-1827529899
+        - trojan-1827529903
+        - trojan-1827529909
+        - trojan-1827530434
+        - trojan-1827530478
+        - trojan-1827530523
+        - trojan-1827530542
+        - trojan-1827534197
+        - trojan-1827543363
+        - trojan-1827613948
+        - trojan-1827658988
+        - trojan-1827658992
+        - trojan-1827727389
+        - trojan-1827731533
+        - trojan-1827731534
+        - trojan-1827731535
+        - trojan-1827731538
+        - trojan-1827731539
+        - trojan-1827731540
+        - trojan-1827731541
+        - trojan-1827731542
+        - trojan-1827910127
+        - trojan-1827910362
+        - trojan-1827910914
+        - trojan-1827910972
+        - trojan-1827911706
+        - trojan-1827913054
+        - trojan-1827926872
+        - trojan-1827937125
+        - trojan-1827937156
+        - trojan-1827937160
+        - trojan-1827937169
+        - trojan-1827937193
+        - trojan-1827937201
+        - trojan-1827937232
+        - trojan-1827937235
+        - trojan-1827937238
+        - trojan-1827937277
+        - trojan-1827937291
+        - trojan-1827937300
+        - trojan-1827937357
+        - trojan-1827937384
+        - trojan-1827937389
+        - trojan-1827937435
+        - trojan-1827937457
+        - trojan-1827937512
+        - trojan-1827937524
+        - trojan-1827937525
+        - trojan-1827937575
+        - trojan-1827937583
+        - trojan-1827937588
+        - trojan-1827937614
+        - trojan-1827937638
+        - trojan-1827937641
+        - trojan-1827937662
+        - trojan-1827937726
+        - trojan-1827937727
+        - trojan-1827937733
+        - trojan-1827937735
+        - trojan-1827937739
+        - trojan-1827937748
+        - trojan-1827937832
+        - trojan-1827937951
+        - trojan-1827937979
+        - trojan-1827938054
+        - trojan-1827938301
+        - trojan-1827938592
+        - trojan-1827939961
+        - trojan-1827941725
+        - trojan-1827944642
+        - trojan-1827944711
+        - trojan-1827944724
+        - trojan-1827944773
+        - trojan-1827944776
+        - trojan-1827944781
+        - trojan-1827944800
+        - trojan-1827944813
+        - trojan-1827944814
+        - trojan-1827944828
+        - trojan-1827944832
+        - trojan-1827944862
+        - trojan-1827944882
+        - trojan-1827944918
+        - trojan-1827944921
+        - trojan-1827944930
+        - trojan-1827944948
+        - trojan-1827944953
+        - trojan-1827944967
+        - trojan-1827944982
+        - trojan-1827944993
+        - trojan-1827945017
+        - trojan-1827945020
+        - trojan-1827945025
+        - trojan-1827945031
+        - trojan-1827945034
+        - trojan-1827945059
+        - trojan-1827945145
+        - trojan-1827945443
+        - trojan-1827945457
+        - trojan-1827946131
+        - trojan-1827946195
+        - trojan-1827946772
+        - trojan-1827947379
+        - trojan-1827947560
+        - trojan-1827954607
+        - trojan-1827954847
+        - trojan-1827955817
+        - trojan-1827956432
+        - trojan-1827957376
+        - trojan-1827957395
+        - trojan-1827957413
+        - trojan-1827957426
+        - trojan-1827957429
+        - trojan-1827957460
+        - trojan-1827957474
+        - trojan-1827957480
+        - trojan-1827957491
+        - trojan-1827957496
+        - trojan-1827957499
+        - trojan-1827957515
+        - trojan-1827957531
+        - trojan-1827957537
+        - trojan-1827957540
+        - trojan-1827957556
+        - trojan-1827957562
+        - trojan-1827957563
+        - trojan-1827957566
+        - trojan-1827957570
+        - trojan-1827957575
+        - trojan-1827958026
+        - trojan-1827958030
+        - trojan-1827958041
+        - trojan-1827958069
+        - trojan-1827958087
+        - trojan-1827958103
+        - trojan-1827958131
+        - trojan-1827958138
+        - trojan-1827958154
+        - trojan-1827958196
+        - trojan-1827958199
+        - trojan-1827958201
+        - trojan-1827958298
+        - trojan-1827958302
+        - trojan-1827958317
+        - trojan-1827958324
+        - trojan-1827958371
+        - trojan-1827958387
+        - trojan-1827958414
+        - trojan-1827958427
+        - trojan-1827958449
+        - trojan-1827958457
+        - trojan-1827958469
+        - trojan-1827958471
+        - trojan-1827958480
+        - trojan-1827958482
+        - trojan-1827958510
+        - trojan-1827958530
+        - trojan-1827958534
+        - trojan-1827958539
+        - trojan-1827958550
+        - trojan-1827958556
+        - trojan-1827958564
+        - trojan-1827958591
+        - trojan-1827958628
+        - trojan-1827958647
+        - trojan-1827958648
+        - trojan-1827958653
+        - trojan-1827958671
+        - trojan-1827958680
+        - trojan-1827958711
+        - trojan-1827958722
+        - trojan-1827958730
+        - trojan-1827958733
+        - trojan-1827958759
+        - trojan-1827958768
+        - trojan-1827958778
+        - trojan-1827958780
+        - trojan-1827958783
+        - trojan-1827958786
+        - trojan-1827958787
+        - trojan-1827958789
+        - trojan-1827958806
+        - trojan-1827958827
+        - trojan-1827958840
+        - trojan-1827958854
+        - trojan-1827958856
+        - trojan-1827958876
+        - trojan-1827958894
+        - trojan-1827958899
+        - trojan-1827958921
+        - trojan-1827958923
+        - trojan-1827958930
+        - trojan-1827958936
+        - trojan-1827958941
+        - trojan-1827959003
+        - trojan-1827959010
+        - trojan-1827959015
+        - trojan-1827959028
+        - trojan-1827959041
+        - trojan-1827959046
+        - trojan-1827959063
+        - trojan-1827959090
+        - trojan-1827959104
+        - trojan-1827959110
+        - trojan-1827959133
+        - trojan-1827959135
+        - trojan-1827959156
+        - trojan-1827959157
+        - trojan-1827959160
+        - trojan-1827959173
+        - trojan-1827959177
+        - trojan-1827959179
+        - trojan-1827959193
+        - trojan-1827959201
+        - trojan-1827959220
+        - trojan-1827959221
+        - trojan-1827959222
+        - trojan-1827959244
+        - trojan-1827959247
+        - trojan-1827959249
+        - trojan-1827959252
+        - trojan-1827959254
+        - trojan-1827959255
+        - trojan-1827959260
+        - trojan-1827959267
+        - trojan-1827959268
+        - trojan-1827959272
+        - trojan-1827959284
+        - trojan-1827959290
+        - trojan-1827959292
+        - trojan-1827959300
+        - trojan-1827959307
+        - trojan-1827959309
+        - trojan-1827959314
+        - trojan-1827959316
+        - trojan-1827959392
+        - trojan-1827959395
+        - trojan-1827959422
+        - trojan-1827959427
+        - trojan-1827959435
+        - trojan-1827959447
+        - trojan-1827959456
+        - trojan-1827959491
+        - trojan-1827959537
+        - trojan-1827959548
+        - trojan-1827959568
+        - trojan-1827959573
+        - trojan-1827959582
+        - trojan-1827959606
+        - trojan-1827959615
+        - trojan-1827959636
+        - trojan-1827959638
+        - trojan-1827959673
+        - trojan-1827959682
+        - trojan-1827959684
+        - trojan-1827959688
+        - trojan-1827959716
+        - trojan-1827959719
+        - trojan-1827959731
+        - trojan-1827959747
+        - trojan-1827959748
+        - trojan-1827959751
+        - trojan-1827959783
+        - trojan-1827959797
+        - trojan-1827959804
+        - trojan-1827959810
+        - trojan-1827959815
+        - trojan-1827959816
+        - trojan-1827959824
+        - trojan-1827959826
+        - trojan-1827959833
+        - trojan-1827959841
+        - trojan-1827959843
+        - trojan-1827959861
+        - trojan-1827959887
+        - trojan-1827959908
+        - trojan-1827959933
+        - trojan-1827959936
+        - trojan-1827959982
+        - trojan-1827960009
+        - trojan-1827960016
+        - trojan-1827960027
+        - trojan-1827960057
+        - trojan-1827960068
+        - trojan-1827960084
+        - trojan-1827960102
+        - trojan-1827960107
+        - trojan-1827960119
+        - trojan-1827960122
+        - trojan-1827960146
+        - trojan-1827960149
+        - trojan-1827960161
+        - trojan-1827960178
+        - trojan-1827960181
+        - trojan-1827960185
+        - trojan-1827960193
+        - trojan-1827960204
+        - trojan-1827960212
+        - trojan-1827960215
+        - trojan-1827960217
+        - trojan-1827960222
+        - trojan-1827960230
+        - trojan-1827960233
+        - trojan-1827960252
+        - trojan-1827960278
+        - trojan-1827960284
+        - trojan-1827960514
+        - trojan-1827961087
+        - trojan-1827988287
+        - trojan-1828126780
+        - trojan-1828127745
+        - trojan-1828127749
+        - trojan-1828128619
       type: select
 rules:
     - MATCH,select
