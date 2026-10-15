@@ -9,7 +9,7 @@ name: download newest
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '39 * * * *'  # 每10分钟执行一次
+    - cron: '19 */2 * * *'  # 每10分钟执行一次
   repository_dispatch:
   workflow_dispatch:
 
