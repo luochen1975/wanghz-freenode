@@ -83,6 +83,7 @@ jobs:
             exit 1
           fi
           echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
+          sed -n '1,/:///{/:///!d};p' "$CONFIG_FILE" > cleaned && mv cleaned "$CONFIG_FILE"
 
       - name: Clean Clash config 2
         id: clean2
