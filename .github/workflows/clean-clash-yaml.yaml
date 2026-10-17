@@ -74,7 +74,8 @@ jobs:
       - name: Download clash config 2
         run: |
           CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
-          DOWNLOAD_URL="https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/protocol/trojan/${CONFIG_FILE}"
+          #DOWNLOAD_URL="https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/protocol/trojan/${CONFIG_FILE}"
+          DOWNLOAD_URL="https://raw.githubusercontent.com/wanghz/Proxify/refs/heads/main/v2ray_configs/seperated_by_protocol/other.txt"
           echo "Downloading from: $DOWNLOAD_URL"
           curl -fL "$DOWNLOAD_URL" -o "$CONFIG_FILE"
           if [ ! -s "$CONFIG_FILE" ]; then
