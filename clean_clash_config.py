@@ -14,7 +14,6 @@ import argparse
 from pathlib import Path
 from typing import Any, Dict, List, Set, Optional
 
-
 # 1) 普通控制字符检测：包含 C0 和 C1 区间
 CONTROL_CHAR_PATTERN = re.compile(r'[\x00-\x1f\x7f-\x9f]')
 
@@ -172,7 +171,7 @@ def _load_yaml_content(content: str) -> Optional[Dict[str, Any]]:
 
     # 诊断输出：帮助定位为什么不是 dict
     parsed_type = type(parsed).__name__ if parsed is not None else "None"
-    snippet = (str(parsed)[:200] + "...") if parsed is not None else ""
+    snippet = (str(parsed)[:200] + '...') if parsed is not None else ""
     print(f"无法从 YAML 中提取到 mapping（dict）。得到类型: {parsed_type}。样例: {snippet}", file=sys.stderr)
     return None
 
@@ -180,7 +179,7 @@ def _load_yaml_content(content: str) -> Optional[Dict[str, Any]]:
 def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inplace: bool = False) -> Dict[str, Any]:
     """
     清理 Clash 配置文件：
-    1) 删除所有包含 U+009F 的行
+    1) 将 U+009F 从内容中移除（但不删除整行）
     2) 解析 YAML
     3) 找出带控制字符的代理并移除
     4) 清理 proxy-groups 中的引用
@@ -189,31 +188,55 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     with input_path.open('r', encoding='utf-8', errors='replace') as f:
         content = f.read()
 
-    # 直接删除包含 U+009F 的整行（按你的要求）
+    # 不要删除整行 —— 直接移除 U+009F 字符以保留 YAML 结构
     bad_char = chr(0x9F)
-    if bad_char in content:
-        lines = content.splitlines(keepends=True)
-        new_lines = [line for line in lines if bad_char not in line]
-        removed_count = len(lines) - len(new_lines)
-        if removed_count > 0:
-            print(f"已删除 {removed_count} 行包含 U+009F 的不安全字符。")
-        content = ''.join(new_lines)
+    count_bad = content.count(bad_char)
+    if count_bad:
+        content = content.replace(bad_char, '')
+        print(f"已移除 {count_bad} 个 U+009F 控制字符（仅移除字符，不删除行）。")
 
     # 若还有其他 YAML 不可接受字符，再做占位符替换后解析
     config: Optional[Dict[str, Any]] = None
+    used_text_for_parsing = content
     if YAML_UNACCEPTABLE_PATTERN.search(content):
         escaped = _escape_control_chars_for_parsing(content)
+        used_text_for_parsing = escaped
         config = _load_yaml_content(escaped)
         if config is not None:
             print("已替换不可接受的控制字符为占位符，并继续解析。")
         else:
             print("解析替换后的内容仍无法得到 mapping（dict）", file=sys.stderr)
+            try:
+                maybe = yaml.safe_load(escaped)
+                print(f"诊断: safe_load(escaped) 返回类型 {type(maybe).__name__}", file=sys.stderr)
+            except Exception as e:
+                print(f"诊断: safe_load(escaped) 抛出: {e}", file=sys.stderr)
             return {}
     else:
         config = _load_yaml_content(content)
         if config is None:
             print("YAML 解析未能返回 mapping（dict），请检查输入文件格式。", file=sys.stderr)
+            try:
+                maybe = yaml.safe_load(content)
+                print(f"诊断: safe_load(content) 返回类型 {type(maybe).__name__}", file=sys.stderr)
+            except Exception as e:
+                print(f"诊断: safe_load(content) 抛出: {e}", file=sys.stderr)
             return {}
+
+    # 最终保障：确保 config 是 dict
+    if not isinstance(config, dict):
+        # 尝试再次用 used_text_for_parsing 解析多文档
+        try:
+            for doc in yaml.load_all(used_text_for_parsing, Loader=yaml.FullLoader):
+                if isinstance(doc, dict):
+                    config = doc
+                    break
+        except Exception:
+            pass
+
+    if not isinstance(config, dict):
+        print("最终无法得到 mapping（dict），终止处理。", file=sys.stderr)
+        return {}
 
     if not config:
         print("配置为空", file=sys.stderr)
