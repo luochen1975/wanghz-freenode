@@ -94,6 +94,37 @@ def filter_proxy_groups(proxy_groups: List[Dict[str, Any]], bad_names: Set[str])
     return cleaned_groups
 
 
+def _load_yaml_content(content: str) -> Optional[Dict[str, Any]]:
+    """尝试加载 YAML 文本，并返回第一个出现的 mapping（dict）。"""
+    # 优先尝试 safe_load
+    try:
+        cfg = yaml.safe_load(content)
+    except yaml.YAMLError:
+        cfg = None
+
+    # 如果 safe_load 返回 a mapping, accept it
+    if isinstance(cfg, dict):
+        return cfg
+
+    # If safe_load returned a non-dict (e.g. str or list) or failed, try load_all and pick first dict doc
+    try:
+        for doc in yaml.load_all(content, Loader=yaml.FullLoader):
+            if isinstance(doc, dict):
+                return doc
+    except Exception:
+        pass
+
+    # As a last resort, try FullLoader on whole content
+    try:
+        cfg2 = yaml.load(content, Loader=yaml.FullLoader)
+        if isinstance(cfg2, dict):
+            return cfg2
+    except Exception:
+        pass
+
+    return None
+
+
 def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inplace: bool = False) -> Dict[str, Any]:
     """
     清理 Clash 配置文件。
@@ -106,7 +137,7 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     with input_path.open('r', encoding='utf-8', errors='replace') as f:
         content = f.read()
 
-    # 直接删除包含 U+009F 的行（按用户要求）
+    # 直接删除包含 U+009F 的行（按用户要求���
     if chr(0x9F) in content:
         lines = content.splitlines(keepends=True)
         new_lines = [l for l in lines if chr(0x9F) not in l]
@@ -115,34 +146,21 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
             print(f"已删除 {removed} 行包含 U+009F 的不安全字符。")
         content = ''.join(new_lines)
 
+    # 如果内容中还有 YAML 不可接受的控制字符，先把这些不可接受字符替换成占位符再解析
     config = None
-
-    # 如果内容中还有 YAML 不可接受的控制字符，先进行替换以避免解析直接失败
     if YAML_UNACCEPTABLE_PATTERN.search(content):
         escaped = _escape_control_chars_for_parsing(content)
-        try:
-            config = yaml.safe_load(escaped)
+        config = _load_yaml_content(escaped)
+        if config is not None:
             print("已替换不可接受控制字符为占位符以继续解析。")
-        except yaml.YAMLError as e:
-            print(f"尝试解析替换后的内容仍然失败: {e}", file=sys.stderr)
-            # 退回到更宽松的加载器
-            try:
-                config = yaml.load(escaped, Loader=yaml.FullLoader)
-            except Exception as e2:
-                print(f"解析仍然失败: {e2}", file=sys.stderr)
-                return {}
+        else:
+            print("尝试解析替换后的内容仍然无法获得 mapping（dict）。", file=sys.stderr)
+            return {}
     else:
-        # 不存在不可接受控制字符，直接尝试安全加载
-        try:
-            config = yaml.safe_load(content)
-        except yaml.YAMLError as e:
-            # 如果解析失败（但不是因为不可接受字符），打印并尝试更宽松的 FullLoader
-            print(f"YAML 解析错误: {e}", file=sys.stderr)
-            try:
-                config = yaml.load(content, Loader=yaml.FullLoader)
-            except Exception as e2:
-                print(f"解析仍然失败: {e2}", file=sys.stderr)
-                return {}
+        config = _load_yaml_content(content)
+        if config is None:
+            print("YAML 解析未能返回映射对象（mapping/dict），请检查输入文件格式。", file=sys.stderr)
+            return {}
 
     if not config:
         print("配置为空", file=sys.stderr)
@@ -189,6 +207,7 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     print(f"已写入: {out_path}")
     return new_config
 
+
 def main():
     parser = argparse.ArgumentParser(description='清理 Clash 配置中的控制字符代理')
     parser.add_argument('input', help='输入 YAML 文件路径')
@@ -203,6 +222,7 @@ def main():
 
     output_path = Path(args.output) if args.output else None
     clean_clash_config(input_path, output_path, args.inplace)
+
 
 if __name__ == '__main__':
     main()
