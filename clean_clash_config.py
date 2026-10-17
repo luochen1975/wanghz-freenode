@@ -15,12 +15,33 @@ from pathlib import Path
 from typing import Any, Dict, List, Set, Optional
 
 
+# 检测常规控制字符（包含 C0 和 C1 区间，便于在内存中判断）
 CONTROL_CHAR_PATTERN = re.compile(r'[\x00-\x1f\x7f-\x9f]')
+
+# YAML 解析器对某些控制字符（不可接受字符）会报错，需要在解析前替换它们。
+# 注意：不替换常见的制表/换行符（\t=\x09, \n=\x0a, \r=\x0d）。
+YAML_UNACCEPTABLE_PATTERN = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]')
+# 占位符前缀，用于替换后识别
+CTRL_MARKER_PREFIX = "__CTRL_"
 
 
 def has_control_chars(text: str) -> bool:
-    """检查字符串是否包含控制字符。"""
-    return bool(CONTROL_CHAR_PATTERN.search(text))
+    """检查字符串是否包含控制字符或此前替换的占位符。"""
+    if not isinstance(text, str):
+        return False
+    if CONTROL_CHAR_PATTERN.search(text):
+        return True
+    if CTRL_MARKER_PREFIX in text:
+        return True
+    return False
+
+
+def _escape_control_chars_for_parsing(s: str) -> str:
+    """把 YAML 不可接受的控制字符替换成可见的占位符，方便 safe_load 成功解析并能检测到原来有控制字符的位置。"""
+    def repl(m):
+        ch = m.group(0)
+        return f"{CTRL_MARKER_PREFIX}{ord(ch):02x}__"
+    return YAML_UNACCEPTABLE_PATTERN.sub(repl, s)
 
 
 def find_proxies_with_control_chars(proxies: List[Dict[str, Any]]) -> Set[str]:
@@ -83,8 +104,18 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
         config = yaml.safe_load(content)
     except yaml.YAMLError as e:
         print(f"YAML 解析错误: {e}", file=sys.stderr)
-        # 尝试宽松加载
-        config = yaml.load(content, Loader=yaml.FullLoader)
+        # 尝试用占位符替换不可接受的控制字符后再解析
+        escaped = _escape_control_chars_for_parsing(content)
+        try:
+            config = yaml.safe_load(escaped)
+            print("已替换不可接受控制字符为占位符以继续解析。")
+        except yaml.YAMLError:
+            # 回退到更宽松的 FullLoader（通常已无不可接受字符时才会成功）
+            try:
+                config = yaml.load(escaped, Loader=yaml.FullLoader)
+            except Exception as e2:
+                print(f"解析仍然失败: {e2}", file=sys.stderr)
+                return {}
 
     if not config:
         print("配置为空", file=sys.stderr)
