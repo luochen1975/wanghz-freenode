@@ -83,9 +83,8 @@ jobs:
             exit 1
           fi
           echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
-          #sed -n '1,/:///{/:///!d};p' "$CONFIG_FILE" > cleaned && mv cleaned "$CONFIG_FILE"
-          awk '/^hysteria2:///{found=1} found{print}' "$CONFIG_FILE" > other.cleaned && mv other.cleaned "$CONFIG_FILE" 
-
+          sed -n '/:///,$p' "$CONFIG_FILE" > other.cleaned && mv /tmp/other.cleaned "$CONFIG_FILE"
+          
       - name: Clean Clash config 2
         id: clean2
         run: |
