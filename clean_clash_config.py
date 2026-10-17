@@ -24,6 +24,9 @@ YAML_UNACCEPTABLE_PATTERN = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]')
 # 占位符前缀，用于替换后识别
 CTRL_MARKER_PREFIX = "__CTRL_"
 
+# 目标特殊字符（用户要求直接删除包含 U+009F 的整行）
+TARGET_CHAR = '\x9f'
+
 
 def has_control_chars(text: str) -> bool:
     """检查字符串是否包含控制字符或此前替换的占位符。"""
@@ -95,13 +98,26 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     """
     清理 Clash 配置文件。
     返回清理后的配置字典。
+
+    改动：为了避免 YAML 解析器因不可接受字符 U+009F 报错，
+    1) 先删除所有包含 U+009F（\x9f）的整行；
+    2) 对剩余内容仍然保留之前的不可接受字符替换策略以便解析。
     """
-    with input_path.open('r', encoding='utf-8') as f:
+    with input_path.open('r', encoding='utf-8', errors='replace') as f:
         content = f.read()
+
+    # 直接删除包含 U+009F 的行（按用户要求）
+    if chr(0x9F) in content:
+        lines = content.splitlines(keepends=True)
+        new_lines = [l for l in lines if chr(0x9F) not in l]
+        removed = len(lines) - len(new_lines)
+        if removed > 0:
+            print(f"已删除 {removed} 行包含 U+009F 的不安全字符。")
+        content = ''.join(new_lines)
 
     config = None
 
-    # 如果文件中包含 YAML 不可接受的控制字符，先进行替换以避免解析直接失败
+    # 如果内容中还有 YAML 不可接受的控制字符，先进行替换以避免解析直接失败
     if YAML_UNACCEPTABLE_PATTERN.search(content):
         escaped = _escape_control_chars_for_parsing(content)
         try:
@@ -173,7 +189,6 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     print(f"已写入: {out_path}")
     return new_config
 
-
 def main():
     parser = argparse.ArgumentParser(description='清理 Clash 配置中的控制字符代理')
     parser.add_argument('input', help='输入 YAML 文件路径')
@@ -188,7 +203,6 @@ def main():
 
     output_path = Path(args.output) if args.output else None
     clean_clash_config(input_path, output_path, args.inplace)
-
 
 if __name__ == '__main__':
     main()
