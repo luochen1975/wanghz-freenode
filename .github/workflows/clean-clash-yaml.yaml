@@ -83,7 +83,15 @@ jobs:
             exit 1
           fi
           echo "Downloaded $(wc -l < "$CONFIG_FILE") lines"
-          sed -i '/^hysteria/!d' "$CONFIG_FILE" && cp "$CONFIG_FILE" ./sub/hy.txt
+          #sed -i '/^hysteria/!d' "$CONFIG_FILE" && cp "$CONFIG_FILE" ./sub/hy.txt
+
+      - name: Clean Clash config 2
+        id: clean2
+        run: |
+          CONFIG_FILE="${{ github.event.inputs.config_file || 'clash-0001.yaml' }}"
+          CLEAN_FILE="sub/${CONFIG_FILE%.yaml}.hy.yaml"
+          #mkdir -p sub
+          python ./clean_clash_config.py "$CONFIG_FILE" "$CLEAN_FILE"
 
 
       - name: 提交并推送更改
