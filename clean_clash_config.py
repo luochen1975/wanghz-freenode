@@ -99,20 +99,31 @@ def clean_clash_config(input_path: Path, output_path: Optional[Path] = None, inp
     with input_path.open('r', encoding='utf-8') as f:
         content = f.read()
 
-    # 先尝试用 yaml 安全加载
-    try:
-        config = yaml.safe_load(content)
-    except yaml.YAMLError as e:
-        print(f"YAML 解析错误: {e}", file=sys.stderr)
-        # 尝试用占位符替换不可接受的控制字符后再解析
+    config = None
+
+    # 如果文件中包含 YAML 不可接受的控制字符，先进行替换以避免解析直接失败
+    if YAML_UNACCEPTABLE_PATTERN.search(content):
         escaped = _escape_control_chars_for_parsing(content)
         try:
             config = yaml.safe_load(escaped)
             print("已替换不可接受控制字符为占位符以继续解析。")
-        except yaml.YAMLError:
-            # 回退到更宽松的 FullLoader（通常已无不可接受字符时才会成功）
+        except yaml.YAMLError as e:
+            print(f"尝试解析替换后的内容仍然失败: {e}", file=sys.stderr)
+            # 退回到更宽松的加载器
             try:
                 config = yaml.load(escaped, Loader=yaml.FullLoader)
+            except Exception as e2:
+                print(f"解析仍然失败: {e2}", file=sys.stderr)
+                return {}
+    else:
+        # 不存在不可接受控制字符，直接尝试安全加载
+        try:
+            config = yaml.safe_load(content)
+        except yaml.YAMLError as e:
+            # 如果解析失败（但不是因为不可接受字符），打印并尝试更宽松的 FullLoader
+            print(f"YAML 解析错误: {e}", file=sys.stderr)
+            try:
+                config = yaml.load(content, Loader=yaml.FullLoader)
             except Exception as e2:
                 print(f"解析仍然失败: {e2}", file=sys.stderr)
                 return {}
