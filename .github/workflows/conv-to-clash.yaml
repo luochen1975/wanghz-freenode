@@ -38,12 +38,15 @@ jobs:
           sleep 5
       
       #下载配置
-      - name: Inspect source list
+      - name: Convert to Clash config
         run: |
-          curl --fail --show-error --location \
-            "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt" \
-            -o /tmp/3.1.txt
-          head -n 5 /tmp/3.1.txt
+          mkdir -p ./sub
+          curl --fail --show-error --location --get \
+            --data-urlencode "target=clash" \
+            --data-urlencode "url=https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt" \
+            "https://sub.asailor.org/sub" \
+            -o ./sub/r3.1.yaml
+
       
       - name: convert to clash configs
         run: |
