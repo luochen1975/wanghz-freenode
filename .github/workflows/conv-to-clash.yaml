@@ -36,7 +36,15 @@ jobs:
           # if you see `subconverter vx.x.x backend` then the container is up and running
           docker ps
           sleep 5
-      #下载clash配置
+      
+      #下载配置
+      - name: Inspect source list
+        run: |
+          curl --fail --show-error --location \
+            "https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt" \
+            -o /tmp/3.1.txt
+          head -n 5 /tmp/3.1.txt
+      
       - name: convert to clash configs
         run: |
           URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
