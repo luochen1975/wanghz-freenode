@@ -33,17 +33,6 @@ jobs:
             -p 25500:25500 \
             ghcr.io/metacubex/subconverter:latest
       
-      #下载配置
-      - name: Convert to Clash config 1
-        run: |
-          curl --fail --show-error --location --get \
-            --data-urlencode "target=clash" \
-            --data-urlencode "url=https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt" \
-            "http://127.0.0.1:25500/sub" \
-            -o ./sub/r3.3.yaml
-        continue-on-error: true  # 即使出错也继续执行后续步骤
-
-      
       - name: convert to clash configs
         run: |
           curl --fail --show-error --location --get \
