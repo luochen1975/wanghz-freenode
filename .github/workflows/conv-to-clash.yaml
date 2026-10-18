@@ -35,7 +35,7 @@ jobs:
       
       - name: convert to clash configs
         run: |
-          curl -fL --retry 3 -o ./sub/r3.1.yaml “http://127.0.0.1:25500/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHidashimora%2Ffree-vpn-anti-rkn%2Fmain%2Fconfigs%2F3.1.txt”
+          curl -fL --retry 3 -o ./sub/r3.1.yaml "http://127.0.0.1:25500/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHidashimora%2Ffree-vpn-anti-rkn%2Fmain%2Fconfigs%2F3.1.txt"
  
         continue-on-error: true  # 即使出错也继续执行后续步骤
 
