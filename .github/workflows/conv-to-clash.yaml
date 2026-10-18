@@ -36,17 +36,20 @@ jobs:
       #下载配置
       - name: Convert to Clash config 1
         run: |
-          curl -o ./sub/r3.3.yaml "http://127.0.0.1:25500/sub?target=clash&url=https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt"
+          curl --fail --show-error --location --get \
+            --data-urlencode "target=clash" \
+            --data-urlencode "url=https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt" \
+            "http://127.0.0.1:25500/sub" \
+            -o ./sub/r3.3.yaml
         continue-on-error: true  # 即使出错也继续执行后续步骤
 
       
       - name: convert to clash configs
         run: |
-          URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
-          ENCODED_URL="$(python3 -c 'import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1], safe=""))' "$URL")"
-          #mkdir -p ./sub
-          curl --fail --show-error --location \
-            "http://127.0.0.1:25500/sub?target=clash&url=${ENCODED_URL}" \
+          curl --fail --show-error --location --get \
+            --data-urlencode "target=clash" \
+            --data-urlencode "url=https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt" \
+            "http://127.0.0.1:25500/sub" \
             -o ./sub/r3.1.yaml
           
         continue-on-error: true  # 即使出错也继续执行后续步骤
