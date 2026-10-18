@@ -23,6 +23,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
       - name: startSubconverter
         run: |
@@ -37,7 +40,11 @@ jobs:
       - name: convert to clash configs
         run: |
           URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
-          curl -o ./sub/r3.1.yaml "http://127.0.0.1:2550/sub?target=clash&url=${URL}"
+          ENCODED_URL="$(python3 -c 'import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1], safe=""))' "$URL")"
+          #mkdir -p ./sub
+          curl --fail --show-error --location \
+            "http://127.0.0.1:2550/sub?target=clash&url=${ENCODED_URL}" \
+            -o ./sub/r3.1.yaml
           
         continue-on-error: true  # 即使出错也继续执行后续步骤
       # 下载转换工具，再将上边3个clash配置转换为sb配置
