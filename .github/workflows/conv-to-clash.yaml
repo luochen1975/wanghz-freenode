@@ -32,7 +32,7 @@ jobs:
           docker run -d --name subconverter \
             -p 7898:7899 \
             ghcr.io/metacubex/subconverter:latest
-          curl http://localhost:25500/version
+          curl http://localhost:7898/version
 
       - name: convert to clash configs
         run: |
