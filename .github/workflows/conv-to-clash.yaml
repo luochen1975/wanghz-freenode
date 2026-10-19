@@ -46,55 +46,17 @@ jobs:
       - name: Convert subscription to Clash
         shell: bash
         run: |
-          set -euo pipefail
-      
-          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
-      
-          mkdir -p ./sub
-      
-          # 1. 下载原始订阅
-          curl -fLsS --retry 3 "$SOURCE_URL" -o /tmp/source.txt
-      
-          # 2. 修复 HTML 转义
-          python3 - <<'PY'
-          from pathlib import Path
-      
-          src = Path("/tmp/source.txt")
-          dst = Path("/tmp/source-fixed.txt")
-      
-          content = src.read_text(encoding="utf-8-sig")
-          count = content.count("&amp;")
-          content = content.replace("&amp;", "&")
-          dst.write_text(content, encoding="utf-8")
-      
-          print(f"Replaced {count} HTML entities")
-          print(f"VLESS nodes: {sum(line.startswith('vless://') for line in content.splitlines())}")
-          PY
-      
-          # 3. 将修复后的文件复制到容器内部
-          docker cp /tmp/source-fixed.txt subconverter:/tmp/source-fixed.txt
-      
-          # 4. 使用容器内文件作为转换输入
-          curl -sS --get \
+          SOURCE_URL='https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt'
+          
+          curl -sS -G \
             --max-time 120 \
-            --data-urlencode 'target=clash' \
-            --data-urlencode 'url=/tmp/source-fixed.txt' \
-            -o /tmp/converted.yaml \
+            -o /tmp/result.txt \
             -w 'HTTP status: %{http_code}\n' \
-            http://127.0.0.1:25500/sub
-      
-          # 5. 检查结果，失败时打印错误正文
-          if grep -q '^proxies:' /tmp/converted.yaml; then
-            cp /tmp/converted.yaml ./sub/r3.1.yaml
-            echo "Conversion succeeded"
-            grep -c '^[[:space:]]*- name:' ./sub/r3.1.yaml || true
-          else
-            echo "Conversion failed; response body:"
-            head -c 3000 /tmp/converted.yaml
-            echo
-            docker logs --tail 100 subconverter
-            exit 1
-          fi
+            'http://127.0.0.1:25500/sub' \
+            --data-urlencode 'target=clash' \
+            --data-urlencode "url=$SOURCE_URL"
+          
+          head -c 1000 /tmp/result.txt
 
         continue-on-error: true  # 即使出错也继续执行后续步骤
 
