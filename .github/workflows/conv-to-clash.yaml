@@ -29,15 +29,25 @@ jobs:
 
       - name: startSubconverter
         run: |
-          docker run -d --name subconverter \
+          docker rm -f subconverter 2>/dev/null || true
+          docker pull asdlokj1qpi23/subconverter:latest
+      
+          docker run -d \
+            --name subconverter \
             -p 25500:25500 \
-            ghcr.io/metacubex/subconverter:latest
-          
-          sleep 3
+            asdlokj1qpi23/subconverter:latest
+      
+          # 等待服务启动
+          for i in $(seq 1 15); do
+            if curl -fsS http://127.0.0.1:25500/version; then
+              echo "Subconverter is ready"
+              break
+            fi
+            sleep 2
+          done
+      
           docker ps -a
-          docker logs subconverter
-          docker inspect subconverter \
-            --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}}'
+          docker logs --tail 50 subconverter
             
       - name: testSubconverter
         run: |
