@@ -58,25 +58,25 @@ jobs:
         run: |
           mkdir -p ./sub
       
-          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
+          SOURCE_URL="https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
             --data-urlencode 'target=clash' \
             --data-urlencode "url=$SOURCE_URL" \
             --data-urlencode 'list=true' \
-            -o ./sub/r3.1.yaml
+            -o ./sub/pawdroid.yaml
       
-          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r3.1.yaml; then
+          if ! grep -qE '^(proxies|proxy-providers):' ./sub/pawdroid.yaml; then
             echo "No valid Clash nodes or providers generated"
-            head -c 2000 ./sub/r3.1.yaml
+            head -c 2000 ./sub/pawdroid.yaml
             echo
             docker logs --tail 100 subconverter
             exit 1
           fi
       
           echo "Conversion succeeded"
-          ls -lh ./sub/r3.1.yaml
+          ls -lh ./sub/pawdroid.yaml
 
           SOURCE_URL32="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt"
       
