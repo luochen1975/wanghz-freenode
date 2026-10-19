@@ -78,12 +78,12 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/r3.1.yaml
 
-          SOURCE_URL1="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt"
+          SOURCE_URL32="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
             --data-urlencode 'target=clash' \
-            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode "url=$SOURCE_URL32" \
             --data-urlencode 'list=true' \
             -o ./sub/r3.2.yaml
       
@@ -98,12 +98,12 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/r3.2.yaml
 
-          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt"
+          SOURCE_URL33="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
             --data-urlencode 'target=clash' \
-            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode "url=$SOURCE_URL33" \
             --data-urlencode 'list=true' \
             -o ./sub/r3.3.yaml
       
@@ -118,12 +118,12 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/r3.3.yaml      
 
-          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt"
+          SOURCE_URL51="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
             --data-urlencode 'target=clash' \
-            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode "url=$SOURCE_URL51" \
             --data-urlencode 'list=true' \
             -o ./sub/r5.1.yaml
       
