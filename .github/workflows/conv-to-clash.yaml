@@ -56,6 +56,32 @@ jobs:
           wc -c /tmp/source.txt
           head -c 200 /tmp/source.txt
           echo
+          echo "VLESS 节点数量："
+          grep -c '^vless://' /tmp/source.txt || true
+          
+          echo "HTML 转义字符数量："
+          grep -oF '&amp;' /tmp/source.txt | wc -l
+          
+          echo "其他协议数量："
+          grep -Ec '^(vmess|ss|ssr|trojan|hysteria2)://' /tmp/source.txt || true
+
+          # 复制到容器中，避免修改 Runner 上的原始文件
+          docker cp /tmp/source.txt subconverter:/tmp/source.txt
+          
+          # 只替换 HTML 转义的参数分隔符
+          docker exec subconverter sh -c \
+            "sed -i 's/\\&amp;/\\\&/g' /tmp/source.txt"
+          
+          # 让 Subconverter 读取容器内部的本地文件
+          curl -sS -G \
+            -o /tmp/converted.yaml \
+            -w 'HTTP status: %{http_code}\n' \
+            'http://127.0.0.1:25500/sub' \
+            --data-urlencode 'target=clash' \
+            --data-urlencode 'url=/tmp/source.txt'
+          
+          head -n 30 /tmp/converted.yaml
+          
       
           echo "=== Test conversion ==="
           curl -sS -L --max-time 120 \
