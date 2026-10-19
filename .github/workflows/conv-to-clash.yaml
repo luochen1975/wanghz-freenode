@@ -98,25 +98,25 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/r3.2.yaml
 
-          SOURCE_URL33="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt"
+          SOURCE_URL41="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.1.txt"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
             --data-urlencode 'target=clash' \
-            --data-urlencode "url=$SOURCE_URL33" \
+            --data-urlencode "url=$SOURCE_URL41" \
             --data-urlencode 'list=true' \
-            -o ./sub/r3.3.yaml
+            -o ./sub/r4.1.yaml
       
-          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r3.3.yaml; then
+          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r4.1.yaml; then
             echo "No valid Clash nodes or providers generated"
-            head -c 2000 ./sub/r3.3.yaml
+            head -c 2000 ./sub/r4.1.yaml
             echo
             docker logs --tail 100 subconverter
             exit 1
           fi
       
           echo "Conversion succeeded"
-          ls -lh ./sub/r3.3.yaml      
+          ls -lh ./sub/r4.1.yaml      
 
           SOURCE_URL51="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt"
       
@@ -138,7 +138,7 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/r5.1.yaml
           
-        #continue-on-error: true  # 即使出错也继续执行后续步骤
+        continue-on-error: true  # 即使出错也继续执行后续步骤
 
       
       - name: Pull changes
