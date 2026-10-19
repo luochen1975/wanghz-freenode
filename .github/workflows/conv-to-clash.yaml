@@ -78,7 +78,7 @@ jobs:
           echo "Conversion succeeded"
           ls -lh ./sub/pawdroid.yaml
 
-          SOURCE_URL32="https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/top.txt"
+          SOURCE_URL32="https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/verified.txt"
       
           curl -fLsS --retry 3 --max-time 180 \
             --get 'http://127.0.0.1:25500/sub' \
