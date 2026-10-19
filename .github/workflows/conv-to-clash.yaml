@@ -30,25 +30,25 @@ jobs:
       - name: startSubconverter
         run: |
           docker rm -f subconverter 2>/dev/null || true
-          docker pull asdlokj1qpi23/subconverter:latest
+      
+          docker pull aethersailor/subconverter-extended:latest
       
           docker run -d \
             --name subconverter \
             -p 25500:25500 \
-            asdlokj1qpi23/subconverter:latest
+            aethersailor/subconverter-extended:latest
       
-          # 等待服务启动
-          for i in $(seq 1 15); do
+          for i in $(seq 1 30); do
             if curl -fsS http://127.0.0.1:25500/version; then
-              echo "Subconverter is ready"
-              break
+              echo "SubConverter-Extended is ready"
+              exit 0
             fi
             sleep 2
           done
       
-          docker ps -a
-          docker logs --tail 50 subconverter
-            
+          docker logs --tail 100 subconverter
+          exit 1
+                  
       - name: testSubconverter
         run: |
           curl -v --connect-timeout 5 --max-time 15 http://127.0.0.1:25500/version
