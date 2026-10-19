@@ -58,7 +58,7 @@ jobs:
         shell: bash
         run: |
           curl -fLsS --retry 3 \
-            'https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt' \
+            'https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt' \
             -o /tmp/source.txt
           python3 - <<'PY'
           from pathlib import Path
