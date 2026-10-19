@@ -53,20 +53,64 @@ jobs:
         run: |
           curl -v --connect-timeout 5 --max-time 15 http://127.0.0.1:25500/version
 
-      - name: Convert subscription to Clash
+
+      - name: Diagnose single VLESS node
         shell: bash
         run: |
-          SOURCE_URL='https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt'
-          
-          curl -sS -G \
-            --max-time 120 \
-            -o /tmp/result.txt \
-            -w 'HTTP status: %{http_code}\n' \
-            'http://127.0.0.1:25500/sub' \
-            --data-urlencode 'target=clash' \
-            --data-urlencode "url=$SOURCE_URL"
-          
-          head -c 1000 /tmp/result.txt
+          python3 - <<'PY'
+          from pathlib import Path
+          import html
+      
+          content = Path("/tmp/source.txt").read_text(encoding="utf-8-sig")
+          nodes = [
+              html.unescape(line.strip())
+              for line in content.splitlines()
+              if line.strip().startswith("vless://")
+          ]
+      
+          if not nodes:
+              raise SystemExit("No VLESS nodes found")
+      
+          # 输出一条节点用于诊断，隐藏用户名等信息
+          node = nodes[0]
+          from urllib.parse import urlsplit, parse_qs
+          parsed = urlsplit(node)
+          print("Scheme:", parsed.scheme)
+          print("Host:", parsed.hostname)
+          print("Port:", parsed.port)
+          print("Query parameters:", sorted(parse_qs(parsed.query).keys()))
+      
+          Path("/tmp/one-vless.txt").write_text(
+              node + "\n", encoding="utf-8"
+          )
+          PY
+      
+          curl -fsS http://127.0.0.1:25500/version
+      
+          # 将单节点作为 data URI 传入，避免远程订阅下载干扰诊断
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.parse import quote
+          import subprocess
+      
+          node = Path("/tmp/one-vless.txt").read_text().strip()
+          url = "data:text/plain;charset=utf-8," + quote(node + "\n")
+      
+          result = subprocess.run([
+              "curl", "-sS", "-G",
+              "-o", "/tmp/one-result.yaml",
+              "-w", "HTTP status: %{http_code}\\n",
+              "http://127.0.0.1:25500/sub",
+              "--data-urlencode", "target=clash",
+              "--data-urlencode", "url=" + url
+          ])
+          if result.returncode:
+              raise SystemExit(result.returncode)
+      
+          print(Path("/tmp/one-result.yaml").read_text()[:1500])
+          PY
+          docker logs --tail 40 subconverter
+
 
         continue-on-error: true  # 即使出错也继续执行后续步骤
 
