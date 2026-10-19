@@ -43,64 +43,58 @@ jobs:
         run: |
           curl -v --connect-timeout 5 --max-time 15 http://127.0.0.1:25500/version
 
-      - name: convert to clash configs
+      - name: Convert subscription to Clash
+        shell: bash
         run: |
-          #curl -fL --retry 3 -o ./sub/r3.1.yaml "http://127.0.0.1:25500/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FHidashimora%2Ffree-vpn-anti-rkn%2Fmain%2Fconfigs%2F3.1.txt"
+          set -euo pipefail
+      
+          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt"
+      
           mkdir -p ./sub
       
-          URL='https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt'
+          # 1. 下载原始订阅
+          curl -fLsS --retry 3 "$SOURCE_URL" -o /tmp/source.txt
       
-          echo "=== Test source subscription ==="
-          curl -fLsS --max-time 30 "$URL" -o /tmp/source.txt
-          echo "Source size:"
-          wc -c /tmp/source.txt
-          head -c 200 /tmp/source.txt
-          echo
-          echo "VLESS 节点数量："
-          grep -c '^vless://' /tmp/source.txt || true
-          
-          echo "HTML 转义字符数量："
-          grep -oF '&amp;' /tmp/source.txt | wc -l
-          
-          echo "其他协议数量："
-          grep -Ec '^(vmess|ss|ssr|trojan|hysteria2)://' /tmp/source.txt || true
-
-          # 复制到容器中，避免修改 Runner 上的原始文件
-          docker cp /tmp/source.txt subconverter:/tmp/source.txt
-          
-          # 只替换 HTML 转义的参数分隔符
-          docker exec subconverter sh -c \
-            "sed -i 's/\\&amp;/\\\&/g' /tmp/source.txt"
-          
-          # 让 Subconverter 读取容器内部的本地文件
-          curl -sS -G \
+          # 2. 修复 HTML 转义
+          python3 - <<'PY'
+          from pathlib import Path
+      
+          src = Path("/tmp/source.txt")
+          dst = Path("/tmp/source-fixed.txt")
+      
+          content = src.read_text(encoding="utf-8-sig")
+          count = content.count("&amp;")
+          content = content.replace("&amp;", "&")
+          dst.write_text(content, encoding="utf-8")
+      
+          print(f"Replaced {count} HTML entities")
+          print(f"VLESS nodes: {sum(line.startswith('vless://') for line in content.splitlines())}")
+          PY
+      
+          # 3. 将修复后的文件复制到容器内部
+          docker cp /tmp/source-fixed.txt subconverter:/tmp/source-fixed.txt
+      
+          # 4. 使用容器内文件作为转换输入
+          curl -sS --get \
+            --max-time 120 \
+            --data-urlencode 'target=clash' \
+            --data-urlencode 'url=/tmp/source-fixed.txt' \
             -o /tmp/converted.yaml \
             -w 'HTTP status: %{http_code}\n' \
-            'http://127.0.0.1:25500/sub' \
-            --data-urlencode 'target=clash' \
-            --data-urlencode 'url=/tmp/source.txt'
-          
-          head -n 30 /tmp/converted.yaml
-          
+            http://127.0.0.1:25500/sub
       
-          echo "=== Test conversion ==="
-          curl -sS -L --max-time 120 \
-            -D /tmp/headers.txt \
-            -o /tmp/response.txt \
-            -w '\nHTTP status: %{http_code}\n' \
-            --get 'http://127.0.0.1:25500/sub' \
-            --data-urlencode 'target=clash' \
-            --data-urlencode "url=$URL"
-      
-          echo "=== Response headers ==="
-          cat /tmp/headers.txt
-      
-          echo "=== Response body ==="
-          head -c 3000 /tmp/response.txt
-          echo
-      
-          echo "=== Subconverter logs ==="
-          docker logs --tail 100 subconverter
+          # 5. 检查结果，失败时打印错误正文
+          if grep -q '^proxies:' /tmp/converted.yaml; then
+            cp /tmp/converted.yaml ./sub/r3.1.yaml
+            echo "Conversion succeeded"
+            grep -c '^[[:space:]]*- name:' ./sub/r3.1.yaml || true
+          else
+            echo "Conversion failed; response body:"
+            head -c 3000 /tmp/converted.yaml
+            echo
+            docker logs --tail 100 subconverter
+            exit 1
+          fi
 
         continue-on-error: true  # 即使出错也继续执行后续步骤
 
