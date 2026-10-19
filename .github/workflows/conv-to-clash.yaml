@@ -32,7 +32,16 @@ jobs:
           docker run -d --name subconverter \
             -p 7898:7899 \
             ghcr.io/metacubex/subconverter:latest
-          curl http://localhost:7898/version
+          
+          sleep 3
+          docker ps -a
+          docker logs subconverter
+          docker inspect subconverter \
+            --format='Status={{.State.Status}} ExitCode={{.State.ExitCode}}'
+            
+      - name: testSubconverter
+        run: |
+          curl -v --connect-timeout 5 --max-time 15 http://127.0.0.1:7898/version
 
       - name: convert to clash configs
         run: |
