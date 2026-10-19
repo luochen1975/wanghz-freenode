@@ -53,7 +53,6 @@ jobs:
         run: |
           curl -v --connect-timeout 5 --max-time 15 http://127.0.0.1:25500/version
 
-
       - name: Convert subscription
         shell: bash
         run: |
@@ -78,8 +77,67 @@ jobs:
       
           echo "Conversion succeeded"
           ls -lh ./sub/r3.1.yaml
-      
 
+          SOURCE_URL1="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt"
+      
+          curl -fLsS --retry 3 --max-time 180 \
+            --get 'http://127.0.0.1:25500/sub' \
+            --data-urlencode 'target=clash' \
+            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode 'list=true' \
+            -o ./sub/r3.2.yaml
+      
+          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r3.2.yaml; then
+            echo "No valid Clash nodes or providers generated"
+            head -c 2000 ./sub/r3.2.yaml
+            echo
+            docker logs --tail 100 subconverter
+            exit 1
+          fi
+      
+          echo "Conversion succeeded"
+          ls -lh ./sub/r3.2.yaml
+
+          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.3.txt"
+      
+          curl -fLsS --retry 3 --max-time 180 \
+            --get 'http://127.0.0.1:25500/sub' \
+            --data-urlencode 'target=clash' \
+            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode 'list=true' \
+            -o ./sub/r3.3.yaml
+      
+          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r3.3.yaml; then
+            echo "No valid Clash nodes or providers generated"
+            head -c 2000 ./sub/r3.3.yaml
+            echo
+            docker logs --tail 100 subconverter
+            exit 1
+          fi
+      
+          echo "Conversion succeeded"
+          ls -lh ./sub/r3.3.yaml      
+
+          SOURCE_URL="https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt"
+      
+          curl -fLsS --retry 3 --max-time 180 \
+            --get 'http://127.0.0.1:25500/sub' \
+            --data-urlencode 'target=clash' \
+            --data-urlencode "url=$SOURCE_URL" \
+            --data-urlencode 'list=true' \
+            -o ./sub/r5.1.yaml
+      
+          if ! grep -qE '^(proxies|proxy-providers):' ./sub/r5.1.yaml; then
+            echo "No valid Clash nodes or providers generated"
+            head -c 2000 ./sub/r5.1.yaml
+            echo
+            docker logs --tail 100 subconverter
+            exit 1
+          fi
+      
+          echo "Conversion succeeded"
+          ls -lh ./sub/r5.1.yaml
+          
         #continue-on-error: true  # 即使出错也继续执行后续步骤
 
       
