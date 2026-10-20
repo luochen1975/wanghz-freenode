@@ -1518,13 +1518,6 @@ proxies:
   skip-cert-verify: true
   sni: speedtest.tinkoff.ru
   type: hysteria2
-- name: hysteria2-1854309346
-  password: gf1:gfhysteria2024
-  port: 443
-  server: 185.156.44.99
-  skip-cert-verify: true
-  sni: google.com
-  type: hysteria2
 - name: hysteria2-1854346724
   password: usqmqUKJFIlCmvkCNSY64L3k
   port: 443
@@ -1707,6 +1700,13 @@ proxies:
   skip-cert-verify: true
   sni: https://t.me/wangcai2üá
   type: hysteria2
+- name: hysteria2-1874979570
+  password: flyzone
+  port: 6090
+  server: 172.232.207.161
+  skip-cert-verify: true
+  sni: www.azki.com
+  type: hysteria2
 - name: hysteria2-1875144620
   password: lh92eQnxIpeg2odHHDg0SrcczqwS4e8Y
   port: 443
@@ -1755,6 +1755,13 @@ proxies:
   server: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: true
   sni: ''
+  type: hysteria2
+- name: hysteria2-1876448880
+  password: dd50a499-7e43-4589-8490-f3b9c2451473
+  port: 443
+  server: 109.235.49.234
+  skip-cert-verify: false
+  sni: nl-hy-test.tcp-reset-club.net
   type: hysteria2
 proxy-groups:
 - interval: 300
@@ -1977,7 +1984,6 @@ proxy-groups:
   - hysteria2-1854131187
   - hysteria2-1854309152
   - hysteria2-1854309256
-  - hysteria2-1854309346
   - hysteria2-1854346724
   - hysteria2-1855771838
   - hysteria2-1856186685
@@ -2004,6 +2010,7 @@ proxy-groups:
   - hysteria2-1874868223
   - hysteria2-1874927573
   - hysteria2-1874927576
+  - hysteria2-1874979570
   - hysteria2-1875144620
   - hysteria2-1875545811
   - hysteria2-1875814472
@@ -2011,6 +2018,7 @@ proxy-groups:
   - hysteria2-1875823307
   - hysteria2-1875918181
   - hysteria2-1875980783
+  - hysteria2-1876448880
   type: url-test
   url: https://www.gstatic.com/generate_204
 - name: select
@@ -2233,7 +2241,6 @@ proxy-groups:
   - hysteria2-1854131187
   - hysteria2-1854309152
   - hysteria2-1854309256
-  - hysteria2-1854309346
   - hysteria2-1854346724
   - hysteria2-1855771838
   - hysteria2-1856186685
@@ -2260,6 +2267,7 @@ proxy-groups:
   - hysteria2-1874868223
   - hysteria2-1874927573
   - hysteria2-1874927576
+  - hysteria2-1874979570
   - hysteria2-1875144620
   - hysteria2-1875545811
   - hysteria2-1875814472
@@ -2267,6 +2275,7 @@ proxy-groups:
   - hysteria2-1875823307
   - hysteria2-1875918181
   - hysteria2-1875980783
+  - hysteria2-1876448880
   type: select
 rules:
 - MATCH,select
