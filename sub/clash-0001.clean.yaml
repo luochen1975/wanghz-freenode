@@ -559,13 +559,6 @@ proxies:
   skip-cert-verify: true
   sni: 152.70.237.123
   type: hysteria2
-- name: hysteria2-1828647672
-  password: b4c8ee9caa74b7ba0a61
-  port: 35076
-  server: scrap.halyvanedorogo.ru
-  skip-cert-verify: false
-  sni: scrap.halyvanedorogo.ru
-  type: hysteria2
 - name: hysteria2-1830343753
   password: 4291c983-c520-46ac-82cc-48f14bef573f
   port: 35013
@@ -677,13 +670,6 @@ proxies:
   server: 155.248.209.237
   skip-cert-verify: false
   sni: hy2.123266.xyz
-  type: hysteria2
-- name: hysteria2-1832765334
-  password: e795f042-4c9f-46d1-9d85-8816e0ff0cfb
-  port: 8443
-  server: fre.guren1.me
-  skip-cert-verify: false
-  sni: fre.guren1.me
   type: hysteria2
 - name: hysteria2-1832765339
   password: gf1:gfhysteria2024
@@ -1700,6 +1686,13 @@ proxies:
   skip-cert-verify: true
   sni: google.com
   type: hysteria2
+- name: hysteria2-1874689802
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
 - name: hysteria2-1874696598
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -1727,6 +1720,13 @@ proxies:
   server: 202.146.222.29
   skip-cert-verify: true
   sni: https://t.me/wangcai2üá
+  type: hysteria2
+- name: hysteria2-1875197281
+  password: 1qjqcrcq6zlyprx7
+  port: 1377
+  server: realnd.dontbedumb.ir
+  skip-cert-verify: false
+  sni: realnd.dontbedumb.ir
   type: hysteria2
 - name: hysteria2-1875814472
   password: 1beb216e3f60aea9555dae60d219a5ca
@@ -1889,6 +1889,27 @@ proxies:
   skip-cert-verify: false
   sni: nl4-gkivm5.vpvr4ib84nuv6hdkt.ru
   type: hysteria2
+- name: hysteria2-1882701983
+  password: 4c858cccff331e64c711a199a6cb256a
+  port: 443
+  server: clash2.deep-links.com
+  skip-cert-verify: true
+  sni: clash2.deep-links.com
+  type: hysteria2
+- name: hysteria2-1882963126
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2ð¨ð³
+  type: hysteria2
+- name: hysteria2-1883010559
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
+  skip-cert-verify: true
+  sni: 5.45.100.100
+  type: hysteria2
 proxy-groups:
 - interval: 300
   name: auto
@@ -1973,7 +1994,6 @@ proxy-groups:
   - hysteria2-1828529039
   - hysteria2-1828529280
   - hysteria2-1828529345
-  - hysteria2-1828647672
   - hysteria2-1830343753
   - hysteria2-1830466990
   - hysteria2-1830467063
@@ -1990,7 +2010,6 @@ proxy-groups:
   - hysteria2-1832765048
   - hysteria2-1832765307
   - hysteria2-1832765317
-  - hysteria2-1832765334
   - hysteria2-1832765339
   - hysteria2-1832765364
   - hysteria2-1832765412
@@ -2136,10 +2155,12 @@ proxy-groups:
   - hysteria2-1871753077
   - hysteria2-1871996597
   - hysteria2-1871996650
+  - hysteria2-1874689802
   - hysteria2-1874696598
   - hysteria2-1874868223
   - hysteria2-1874927573
   - hysteria2-1874927576
+  - hysteria2-1875197281
   - hysteria2-1875814472
   - hysteria2-1875823307
   - hysteria2-1875918181
@@ -2163,6 +2184,9 @@ proxy-groups:
   - hysteria2-1878815273
   - hysteria2-1880873612
   - hysteria2-1882041904
+  - hysteria2-1882701983
+  - hysteria2-1882963126
+  - hysteria2-1883010559
   type: url-test
   url: https://www.gstatic.com/generate_204
 - name: select
@@ -2248,7 +2272,6 @@ proxy-groups:
   - hysteria2-1828529039
   - hysteria2-1828529280
   - hysteria2-1828529345
-  - hysteria2-1828647672
   - hysteria2-1830343753
   - hysteria2-1830466990
   - hysteria2-1830467063
@@ -2265,7 +2288,6 @@ proxy-groups:
   - hysteria2-1832765048
   - hysteria2-1832765307
   - hysteria2-1832765317
-  - hysteria2-1832765334
   - hysteria2-1832765339
   - hysteria2-1832765364
   - hysteria2-1832765412
@@ -2411,10 +2433,12 @@ proxy-groups:
   - hysteria2-1871753077
   - hysteria2-1871996597
   - hysteria2-1871996650
+  - hysteria2-1874689802
   - hysteria2-1874696598
   - hysteria2-1874868223
   - hysteria2-1874927573
   - hysteria2-1874927576
+  - hysteria2-1875197281
   - hysteria2-1875814472
   - hysteria2-1875823307
   - hysteria2-1875918181
@@ -2438,6 +2462,9 @@ proxy-groups:
   - hysteria2-1878815273
   - hysteria2-1880873612
   - hysteria2-1882041904
+  - hysteria2-1882701983
+  - hysteria2-1882963126
+  - hysteria2-1883010559
   type: select
 rules:
 - MATCH,select
