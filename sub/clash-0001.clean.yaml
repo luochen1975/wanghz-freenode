@@ -34,13 +34,6 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: hysteria2-1827145146
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: de.1.23.h2corp.org
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
-  type: hysteria2
 - name: hysteria2-1827145159
   password: usqmqUKJFIlCmvkCNSY64L3k
   port: 443
@@ -719,6 +712,13 @@ proxies:
   server: 103.88.243.142
   skip-cert-verify: false
   sni: srv-17e124.21freedom.net
+  type: hysteria2
+- name: hysteria2-1832765308
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  port: 9443
+  server: 104.165.205.43
+  skip-cert-verify: true
+  sni: onecloudstream.com
   type: hysteria2
 - name: hysteria2-1832765317
   password: bce6c821-200d-421f-bf3d-7159e5246ea0
@@ -1623,13 +1623,6 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: hysteria2-1856006998
-  password: 76ivwa51ce2gauym
-  port: 52004
-  server: giftcard.gateway-stream.com
-  skip-cert-verify: false
-  sni: giftcard.gateway-stream.com
-  type: hysteria2
 - name: hysteria2-1856185235
   password: 41edb44c8e
   port: 11592
@@ -2050,13 +2043,6 @@ proxies:
   skip-cert-verify: false
   sni: pisulka.jsbox.top
   type: hysteria2
-- name: hysteria2-1908512038
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  port: 443
-  server: 2.26.3.75
-  skip-cert-verify: true
-  sni: 2.26.3.75
-  type: hysteria2
 - name: hysteria2-1908512041
   password: dd50a499-7e43-4589-8490-f3b9c2451473
   port: 443
@@ -2077,13 +2063,6 @@ proxies:
   server: promo.betust.net
   skip-cert-verify: false
   sni: ''
-  type: hysteria2
-- name: hysteria2-1916689156
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 443
-  server: 13.125.13.26
-  skip-cert-verify: true
-  sni: www.bing.com
   type: hysteria2
 - name: hysteria2-1917575832
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -2176,6 +2155,83 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
+- name: hysteria2-1926289817
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 18.153.65.67
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: hysteria2-1926289818
+  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
+  port: 443
+  server: forshynewh.duckdns.org
+  skip-cert-verify: false
+  sni: forshynewh.duckdns.org
+  type: hysteria2
+- name: hysteria2-1926289821
+  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
+  port: 443
+  server: 217.60.72.225
+  skip-cert-verify: false
+  sni: forshynewh.duckdns.org
+  type: hysteria2
+- name: hysteria2-1926289822
+  password: 94c2b91777f8de3a5bc12d2a91b732c2
+  port: 443
+  server: promo3.betust.net
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: hysteria2-1926289829
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: hysteria2-1926289833
+  password: dd56bf58-4c37-42e1-9e75-4b6c67939ffd
+  port: 20270
+  server: pl.song69.fun
+  skip-cert-verify: true
+  sni: pl1.song69.fun
+  type: hysteria2
+- name: hysteria2-1926536919
+  password: dd50a499-7e43-4589-8490-f3b9c2451473
+  port: 443
+  server: nl-hy-test.tcp-reset-club.net
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: hysteria2-1926536926
+  password: 529f1911-04d5-4427-94b9-c851fd459a27
+  port: 443
+  server: nl-hy-test.tcp-reset-club.net
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: hysteria2-1926729179
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.64.194.247
+  skip-cert-verify: true
+  sni: 3.64.194.247
+  type: hysteria2
+- name: hysteria2-1926741090
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  port: 4443
+  server: pl2.shvpn.ru
+  skip-cert-verify: false
+  sni: pl2.shvpn.ru
+  type: hysteria2
+- name: hysteria2-1926741101
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  port: 4443
+  server: pl1.shvpn.ru
+  skip-cert-verify: false
+  sni: pl1.shvpn.ru
+  type: hysteria2
 proxy-groups:
 - interval: 300
   name: auto
@@ -2185,7 +2241,6 @@ proxy-groups:
   - hysteria2-1827145109
   - hysteria2-1827145136
   - hysteria2-1827145140
-  - hysteria2-1827145146
   - hysteria2-1827145159
   - hysteria2-1827145162
   - hysteria2-1827145205
@@ -2283,6 +2338,7 @@ proxy-groups:
   - hysteria2-1832765048
   - hysteria2-1832765169
   - hysteria2-1832765239
+  - hysteria2-1832765308
   - hysteria2-1832765317
   - hysteria2-1832765334
   - hysteria2-1832765339
@@ -2412,7 +2468,6 @@ proxy-groups:
   - hysteria2-1854346724
   - hysteria2-1854351334
   - hysteria2-1855771838
-  - hysteria2-1856006998
   - hysteria2-1856185235
   - hysteria2-1856232085
   - hysteria2-1856441679
@@ -2473,11 +2528,9 @@ proxy-groups:
   - hysteria2-1905414644
   - hysteria2-1907713787
   - hysteria2-1907713903
-  - hysteria2-1908512038
   - hysteria2-1908512041
   - hysteria2-1908518020
   - hysteria2-1910185368
-  - hysteria2-1916689156
   - hysteria2-1917575832
   - hysteria2-1922183951
   - hysteria2-1923846549
@@ -2491,6 +2544,17 @@ proxy-groups:
   - hysteria2-1925771725
   - hysteria2-1925771726
   - hysteria2-1925950913
+  - hysteria2-1926289817
+  - hysteria2-1926289818
+  - hysteria2-1926289821
+  - hysteria2-1926289822
+  - hysteria2-1926289829
+  - hysteria2-1926289833
+  - hysteria2-1926536919
+  - hysteria2-1926536926
+  - hysteria2-1926729179
+  - hysteria2-1926741090
+  - hysteria2-1926741101
   type: url-test
   url: https://www.gstatic.com/generate_204
 - name: select
@@ -2501,7 +2565,6 @@ proxy-groups:
   - hysteria2-1827145109
   - hysteria2-1827145136
   - hysteria2-1827145140
-  - hysteria2-1827145146
   - hysteria2-1827145159
   - hysteria2-1827145162
   - hysteria2-1827145205
@@ -2599,6 +2662,7 @@ proxy-groups:
   - hysteria2-1832765048
   - hysteria2-1832765169
   - hysteria2-1832765239
+  - hysteria2-1832765308
   - hysteria2-1832765317
   - hysteria2-1832765334
   - hysteria2-1832765339
@@ -2728,7 +2792,6 @@ proxy-groups:
   - hysteria2-1854346724
   - hysteria2-1854351334
   - hysteria2-1855771838
-  - hysteria2-1856006998
   - hysteria2-1856185235
   - hysteria2-1856232085
   - hysteria2-1856441679
@@ -2789,11 +2852,9 @@ proxy-groups:
   - hysteria2-1905414644
   - hysteria2-1907713787
   - hysteria2-1907713903
-  - hysteria2-1908512038
   - hysteria2-1908512041
   - hysteria2-1908518020
   - hysteria2-1910185368
-  - hysteria2-1916689156
   - hysteria2-1917575832
   - hysteria2-1922183951
   - hysteria2-1923846549
@@ -2807,6 +2868,17 @@ proxy-groups:
   - hysteria2-1925771725
   - hysteria2-1925771726
   - hysteria2-1925950913
+  - hysteria2-1926289817
+  - hysteria2-1926289818
+  - hysteria2-1926289821
+  - hysteria2-1926289822
+  - hysteria2-1926289829
+  - hysteria2-1926289833
+  - hysteria2-1926536919
+  - hysteria2-1926536926
+  - hysteria2-1926729179
+  - hysteria2-1926741090
+  - hysteria2-1926741101
   type: select
 rules:
 - MATCH,select
